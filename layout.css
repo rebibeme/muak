@@ -1,3 +1,21 @@
+nav {
+	display: table;
+	width: 100%;
+}
+
+nav > ul {
+	display: table-row;
+}
+
+nav > ul > li {
+	display: table-cell;
+	text-align: center;
+}
+
+nav > ul > li > a {
+	display: block;
+}
+
 nav ul li {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 	font-size: 0.8em;
@@ -16,6 +34,6 @@ nav ul li a:visited {
 }
 
 nav ul li a:hover {
-	background-color: black;
+	background-color: red;
 	color: white;
 }
