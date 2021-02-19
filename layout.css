@@ -1,4 +1,4 @@
-
+/*navigation styles*/
 nav {
 	display: table;
 	width: 100%;
@@ -23,24 +23,12 @@ nav > ul > li > a {
 	display: block;
 }
 
-nav ul li {
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
-	font-size: 0.8em;
-}
-
-nav ul li a{
-    color: black;
-    text-decoration: none;
-    display: block;
-	margin-bottom: 8%;
-}
-
-nav ul li a:visited {
-	color: #222;
-    background-color: black;
-}
-
-nav ul li a:hover {
-	background-color: red;
-	color: white;
+/*structural styles*/
+address{
+	color:black;
+	font-style: normal;
+	font-size: 0.9em;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
