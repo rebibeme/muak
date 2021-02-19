@@ -1,46 +1,30 @@
 /*upper navigation styles*/
-header > nav {
+#upper > nav {
 	display: table;
-	width: 20%;
+	width: 250px;
+	table-layout: fixed;
 	margin-right: 0px;
 	margin-left: auto;
 }
 
-header > nav > ul {
-	display: table-row;
-}
-
-header > nav > ul > li{
-	display: table-cell;
-	text-align: center;
-}
-
-header > nav > ul > li > a{
-	display: block;
-}
-
-/*navigation styles*/
-body > nav {
+/*lower navigation styles*/
+#lower > nav {
 	display: table;
 	width: 100%;
 	table-layout: fixed;
 	text-align: center;
 }
-body > nav {
-	display: table;
-	width: 100%;
-}
 
-body > nav > ul {
+/*navigation styles*/
+.navi > nav > ul {
 	display: table-row;
 }
-
-body > nav > ul > li {
+.navi > nav > ul > li{
 	display: table-cell;
 	text-align: center;
 }
-
-body > nav > ul > li > a {
+.navi > nav > ul > li > a{
 	display: block;
 }
+
 
