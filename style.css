@@ -6,7 +6,7 @@
 
 /*upper navigation styles*/
 #lower > nav > ul > li > a:hover {
-	background-color: red;
+	background-color:rgb(13, 13, 94);
 	color: white;
 }
 
