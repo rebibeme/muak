@@ -1,34 +1,46 @@
+/*upper navigation styles*/
+header > nav {
+	display: table;
+	width: 20%;
+	margin-right: 0px;
+	margin-left: auto;
+}
+
+header > nav > ul {
+	display: table-row;
+}
+
+header > nav > ul > li{
+	display: table-cell;
+	text-align: center;
+}
+
+header > nav > ul > li > a{
+	display: block;
+}
+
 /*navigation styles*/
-nav {
+body > nav {
 	display: table;
 	width: 100%;
 	table-layout: fixed;
 	text-align: center;
 }
-nav {
+body > nav {
 	display: table;
 	width: 100%;
 }
 
-nav > ul {
+body > nav > ul {
 	display: table-row;
 }
 
-nav > ul > li {
+body > nav > ul > li {
 	display: table-cell;
 	text-align: center;
 }
 
-nav > ul > li > a {
+body > nav > ul > li > a {
 	display: block;
 }
 
-/*structural styles*/
-address{
-	color:black;
-	font-style: normal;
-	font-size: 0.9em;
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
