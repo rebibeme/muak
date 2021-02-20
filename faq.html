@@ -198,57 +198,37 @@
 
 
     <!--Chatbot button-->
-    <button onclick="chatbot()" id="chatbtn" title="Chatbot button"><img src="drake.jpg"></button>
-    <script>
-    //Get the button
-    var chatbutton = document.getElementById("chatbtn");
-    </script>
     
-    <script>
-      //Make the DIV element draggagle:
-      dragElement(document.getElementById("chatbtn"));
-      
-      function dragElement(elmnt) {
-        var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-        if (document.getElementById(elmnt.id + "header")) {
-          /* if present, the header is where you move the DIV from:*/
-          document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-        } else {
-          /* otherwise, move the DIV from anywhere inside the DIV:*/
-          elmnt.onmousedown = dragMouseDown;
-        }
-      
-        function dragMouseDown(e) {
-          e = e || window.event;
-          e.preventDefault();
-          // get the mouse cursor position at startup:
-          pos3 = e.clientX;
-          pos4 = e.clientY;
-          document.onmouseup = closeDragElement;
-          // call a function whenever the cursor moves:
-          document.onmousemove = elementDrag;
-        }
-      
-        function elementDrag(e) {
-          e = e || window.event;
-          e.preventDefault();
-          // calculate the new cursor position:
-          pos1 = pos3 - e.clientX;
-          pos2 = pos4 - e.clientY;
-          pos3 = e.clientX;
-          pos4 = e.clientY;
-          // set the element's new position:
-          elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-          elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-        }
-      
-        function closeDragElement() {
-          /* stop moving when mouse button is released:*/
-          document.onmouseup = null;
-          document.onmousemove = null;
-        }
-      }
-      </script>
+    
+    
+    <!--openform() to chatbot()//-->
+    <!--open form to image-->
+    
+
+    
+    <button id="chatbtn" class="open-button" onclick="chatbot()"><img src="drake.jpg"></button>
+
+<div class="popupchatbox" id="mainchatbox">
+  <form action="/action_page.php" class="chatbox">
+    <button type="button" class="closebtn" onclick="closebot()">&#10006;</button>
+    <input type="text" placeholder="Enter message" name="message" required>
+
+    <button type="submit" class="sendbtn">Send</button>
+    
+  </form>
+</div>
+
+  
+
+<script>
+function chatbot() {
+  document.getElementById("mainchatbox").style.display = "block";
+}
+
+function closebot() {
+  document.getElementById("mainchatbox").style.display = "none";
+}
+</script>
 
 
 
