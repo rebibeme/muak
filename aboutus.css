@@ -1,3 +1,32 @@
+/*stick navbar*/
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+  .sticky + .content {
+	padding-top: 60px;
+  }
+/*h1 style*/
+h1{
+font-family:  Verdana, Geneva, Tahoma, sans-serif;
+display: block;
+font-size: 1.17em;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+}
+
+.content{
+	max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+	font-family:  Verdana, Geneva, Tahoma, sans-serif;
+	
+}
+  
 /*layout*/
 /*upper navigation styles*/
 #upper > nav {
@@ -6,14 +35,15 @@
 	table-layout: fixed;
 	margin-right: 0px;
 	margin-left: auto;
+	
 }
-
 /*lower navigation styles*/
 #lower > nav {
 	display: table;
 	width: 100%;
 	table-layout: fixed;
-
+background-color: white;
+overflow: hidden;
 }
 
 /*navigation styles*/
@@ -109,17 +139,42 @@ body > h1{
 
 /*paragraph style*/
 #firstparagraph{
-	font-family: Georgia, grunge;
-	font-size: 2.5em;
+	font-size: 1.5em;
 	text-align: center;
-	padding-left: 5em;
-	padding-right: 5em;
+	padding-left: 4em;
+	padding-right: 4em;
 }
 
 #secondparagraph{
-	font-family: Georgia, grunge;
 	font-size: 1.5em;
 	text-align: center;
 	padding-left: 3em;
 	padding-right: 3em;
+}
+
+/*thirdparagraph*/
+aside{
+width: 50%;
+float: left;
+}
+
+#vision{
+	display: block;
+	font-size: 1.17em;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	text-align: center;
+}
+
+#thirdparagraph{
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	text-align: center;
+	font-size: 5em;
+	font-family: Georgia, grunge;
 }
