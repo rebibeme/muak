@@ -67,6 +67,10 @@ address{
 #faqpayment{
 	color:  rgb(68, 68, 68);
 }
+#faqpayment > p > a{
+	color: rgb(0, 0, 255);
+	text-decoration: none;
+}
 #faqreturn{
 	color:  rgb(68, 68, 68);
 }
