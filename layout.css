@@ -12,7 +12,7 @@
 	display: table;
 	width: 100%;
 	table-layout: fixed;
-	
+
 }
 
 /*navigation styles*/
@@ -55,6 +55,5 @@
   #topbtn:hover {
 	color: white;
 	background-color: rgb(0, 0, 105);
-	
   }
 

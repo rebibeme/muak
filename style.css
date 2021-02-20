@@ -13,7 +13,7 @@
 /*navigation styles*/
 .navi > nav > ul > li {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
-	font-size: 0.85em;
+	font-size: .85em;
 }
 
 .navi > nav > ul > li > a{
@@ -23,6 +23,7 @@
 	margin-bottom: 8%;
 	font-weight: bold;
 	text-transform: uppercase;
+	padding: 8px;
 }
 
 .navi > nav > ul > li > a:visited {
