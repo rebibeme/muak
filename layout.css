@@ -12,6 +12,7 @@
 	display: table;
 	width: 100%;
 	table-layout: fixed;
+	
 }
 
 /*navigation styles*/
@@ -33,4 +34,27 @@
   	margin-right: auto;
   	width: 50%;
 }
+
+/*Top button*/
+#topbtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 50px; /* Place the button at the bottom of the page */
+	right: 50px; /* Place the button 30px from the right */
+	z-index: 10; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: transparent;/* Set a background color */
+	color: black; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 15px; /* Rounded corners */
+	font-size: 17px; /* Increase font size */
+  }
+  
+  #topbtn:hover {
+	color: white;
+	background-color: rgb(0, 0, 105);
+	
+  }
 
