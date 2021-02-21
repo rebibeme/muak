@@ -1,37 +1,53 @@
 table {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: absolute;
-    left: 250px;
-    top: 350px;
     font-weight: bold;
   }
-  
-th{
+
+#seasonlist{
+  left: 30px;
+  top: 350px;
+  width: 13%;
+}
+#seasonlist td {
+  padding: 10px;
+  min-width: none;
+  max-width: 170px;
+  color: white;
+  background-color: black;
+  margin: 100px;
+}
+/*why need a space*/
+#seasonlist tr :hover{
+  color: black;
+  background-color: white;
+}
+
+
+#productlist{
+  left: 250px;
+  top: 350px;
+}
+#productlist th{
     border: 2px solid  maroon;
     text-align: left;
     padding: 13px;
     color: white;
     background-color: maroon;
   }
-
-td {
+#productlist td {
   border: 2px solid  maroon;
   text-align: left;
   padding: 10px;
   width: 100px;
   color: maroon;
 }
-
-tr th:hover{
+/*why need a space*/
+#productlist tr :hover{
   color: white;
   background-color: maroon;
 }
 
-/*why need a space*/
-tr :hover{
-    color: white;
-    background-color: maroon;
-}
 
 img{
   display: block;
@@ -44,7 +60,9 @@ img{
 }
 
 .productcategorypage{
-    width: 1000px;
+    min-width: none;
+    max-width: 1000px;
+    width: 70%;
     margin-left: 430px;
 }
 
