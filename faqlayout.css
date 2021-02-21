@@ -39,19 +39,17 @@ display: block;
 
 
 
-.chatbtn img{
-  width: 50%;
-}
+
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
-  background-color: none;
+  background-color: transparent;
   border: none;
   cursor: pointer;
   opacity: 0.8;
   position: fixed;
   bottom: 50px;
-  right: 1350px;
+  left: 50px;
   z-index: 90;
   display: block;
 }
@@ -118,4 +116,39 @@ display: block;
 /* Add some hover effects to buttons */
 .chatbox .sendbtn:hover, .open-button:hover {
   opacity: 1;
+}
+
+
+
+.chatmessage p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 470;
+}
+
+.chatmessage {
+  border: 2px solid #dedede;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1px;
+  margin-top: 10px;
+}
+
+.chatmessage::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.chatmessage img {
+  float: left;
+  max-width: 60px;
+  max-height: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.botkanyetime {
+  float: right;
+  color: gray;
 }

@@ -56,17 +56,5 @@
 	background-color: rgb(0, 0, 105);
   }
 
-  /*Chat button*/
-  #chatbtn{
-	display: block; 
-	position: fixed;
-	bottom: 100px; 
-	right: 100px; 
-	z-index: 99;
-	border: none; 
-	outline: none; 
-	background-color: transparent;
-	cursor: pointer; 
-	padding: 0px;
-  }
+
 
