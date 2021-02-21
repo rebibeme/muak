@@ -1,11 +1,7 @@
 /*back to top button*/
 topbutton = document.getElementById("topbtn");
 
-<<<<<<< HEAD:navbarandtopbutton.js
 window.onscroll = function() {scrollFunction(),myFunction()};
-=======
-window.onscroll = function () {scrollFunction()};
->>>>>>> 8ac4eb8f87dd442d0750de76472f73b7267c56d3:topbutton.js
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -21,7 +17,6 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
   
 }
-
 
 
 /*sticky navbar*/
