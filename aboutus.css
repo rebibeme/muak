@@ -1,12 +1,4 @@
-/*stick navbar*/
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-  }
-  .sticky + .content {
-	padding-top: 60px;
-  }
+
 /*h1 style*/
 h1{
 font-family:  Verdana, Geneva, Tahoma, sans-serif;
