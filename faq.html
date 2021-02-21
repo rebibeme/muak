@@ -171,33 +171,16 @@
 
 
   
-  <!--Top button-->
-  <button onclick="topFunction()" id="topbtn" title="Go to top">&#8896;<br>TOP</button>
-  <script>
-    //Get the button
-    var topbutton = document.getElementById("topbtn");
-    
-    // When the user scrolls down 50px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        topbutton.style.display = "block";
-      } else {
-        topbutton.style.display = "none";
-      }
-    }
-    
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-    </script>
+    <!--Top button-->
+    <script src="topbutton.js"></script>
+    <button onclick="topFunction()" id="topbtn" title="Go to top">&#8896;<br>TOP</button>
+  
   
 
 
     <!--chatbox-->
+    <script src="chatbot.js"></script>
+
     <button id="chatbtn" class="open-button" onclick="chatbot()"><img src="chatbot.jpg" alt="chatbot"></button>
 
     <div class="popupchatbox" id="mainchatbox">
@@ -205,8 +188,6 @@
         <button type="button" class="closebtn" onclick="closebot()">&#10006;</button>
         <input type="text" placeholder="Enter message" name="message" required>
         <button type="submit" class="sendbtn">Send</button>
-
-
         <div class="chatmessage">
           <img src="kanyewest.jpg" alt="botkanye" style="width:100%;">
           <p>Hi. How may I help you?</p>
@@ -215,32 +196,8 @@
       </form>
     </div>
 
-    <script>
-      function chatbot() {
-        document.getElementById("mainchatbox").style.display = "block";
-      }
-      
-      function closebot() {
-        document.getElementById("mainchatbox").style.display = "none";
-      }
-    </script>
-
-
     <!--sticky navbar-->
-    <script>
-     window.onscroll = function() {myFunction()};
-    
-     var navbar = document.getElementById("lower");
-     var sticky = navbar.offsetTop;
-    
-     function myFunction() {
-       if (window.pageYOffset >= sticky) {
-         navbar.classList.add("sticky")
-       } else {
-         navbar.classList.remove("sticky");
-       }
-     }
-     </script>
+    <script src="stickynavbar.js"></script>
 
 
 
