@@ -43,8 +43,7 @@ img{
     text-align: center;
 }
 
-.test{
-    border: 3px solid green;
+.productcategorypage{
     width: 1000px;
     margin-left: 430px;
 }
@@ -54,7 +53,7 @@ div.productsection{
     float: left;
     padding: 2%;
     box-sizing: border-box;
-    width: 30%;   
+    width: 32.3%;   
     height: 600px;
     border: 1px solid black;
     margin: 5px;
