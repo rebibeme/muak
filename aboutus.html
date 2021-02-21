@@ -58,7 +58,7 @@
     <strong>Why Us</strong>
   </div>
   <section id="fourthparagraph" class="paragraph">
-    SeekSeek always prioritise customers' benefits. We belive that customers is just like our family members. Thus, our products are exclusive made for our customers.
+    SeekSeek always prioritise customers' benefits. We belive that customers are just like our family members. Thus, our products are exclusive made for our customers.
   </section>
 </article>
 <hr style="width: 100%;">
@@ -68,7 +68,7 @@
 <section id="fifthparagraph" class="paragraph">
 <p>SeekSeek has been making own seasonal products for 15 years. And now, we turn our path by placing our products through online. Join us now and let's share our culture and joyness to the world.</p>
 </section>
-<img src="join_us_.jpg" alt="Join Us" style="width: 800px;height:400px";>
+<img src="join_us_.jpg" alt="Join Us" class="center" style="width: 800px;height:400px";>
 </div>
 
   <footer>
@@ -79,24 +79,27 @@
     </address>
     
  </footer>
- 
- <!--sticky navbar-->
- <script>
-   window.onscroll = function() {myFunction()};
-   
-   var navbar = document.getElementById("lower");
-   var sticky = navbar.offsetTop;
-   
-   function myFunction() {
-     if (window.pageYOffset >= sticky) {
-       navbar.classList.add("sticky")
-     } else {
-       navbar.classList.remove("sticky");
-     }
-   }
-   </script>
-   
+ <!--sticky navbar and top button-->
+ <button onclick="topFunction()" id="topbtn" title="Go to top">&#8896;<br>TOP</button>
+ <script src="navbarandtopbutton.js"></script>
 
-  
+
+ <!--chatbot-->
+ <script src="chatbot.js"></script>
+    <button id="chatbtn" class="open-button" onclick="chatbot()"><img src="chatbot.jpg" alt="chatbot"></button>
+    <div class="popupchatbox" id="mainchatbox">
+      <form action="/action_page.php" class="chatbox">
+        <button type="button" class="closebtn" onclick="closebot()">&#10006;</button>
+        <input type="text" placeholder="Enter message" name="message" required>
+        <button type="submit" class="sendbtn">Send</button>
+        <div class="chatmessage">
+          <img src="kanyewest.jpg" alt="botkanye" style="width:100%;">
+          <p>Hi. How may I help you?</p>
+          <span class="botkanyetime">11:00</span>
+        </div>
+      </form>
+    </div>
+
+    
 </body>
 </html>
