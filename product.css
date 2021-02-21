@@ -1,7 +1,7 @@
 table {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: absolute;
-    left: 100px;
+    left: 270px;
     top: 350px;
     font-weight: bold;
   }
@@ -48,10 +48,15 @@ img{
 
 
  /* Row Styles */
-div.newRow{
+.cnyproduct{
+    width: 1300px;
+    margin-left: 450px;
+}
+
+ div.newRow{
     width:100%;
     clear: both;
-    margin-left: 150px;
+    
  }
  
  /* Column Styles */
