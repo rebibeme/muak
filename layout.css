@@ -12,7 +12,7 @@
 	display: table;
 	width: 100%;
 	table-layout: fixed;
-
+	margin-bottom: 0px;
 }
 
 /*navigation styles*/
