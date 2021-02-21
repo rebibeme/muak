@@ -39,8 +39,8 @@ body > h1{
 	padding-right: 3em;
 }
 
-aside{
-width: 50%;
+#Vision{
+width: 45%;
 float: left;
 }
 
@@ -61,6 +61,47 @@ float: left;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 	text-align: center;
-	font-size:1.1em;
+	font-size:1.2em;
+	font-family: Georgia, grunge;
+}
+#WhyUs{
+	width: 45%;
+	float: right;
+	}
+#whyus{
+	display: block;
+	font-size: 1.17em;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	text-align: center;
+}
+
+#fourthparagraph{
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	text-align: center;
+	font-size:1.2em;
+	font-family: Georgia, grunge;
+}
+
+#joinus{
+	font-weight: bold;
+	color: black;
+	text-align: center;
+}
+
+#fifthparagraph{
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	text-align: center;
+	font-size:1.2em;
 	font-family: Georgia, grunge;
 }
