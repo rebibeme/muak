@@ -6,14 +6,14 @@
 }
 
 /*faq button*/
-.faqbutton > a{
+.faqbutton a{
   display: block;
   width: 150px;
   padding: 10px ;
   text-align: center;
   text-decoration: none;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  height: 30px;
 }
 
 /*faq container*/
