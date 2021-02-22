@@ -7,7 +7,8 @@
 /*product section*/
  img{
   display: block;
-  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
  }
  .productpage {
   overflow: hidden;
