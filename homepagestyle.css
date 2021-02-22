@@ -1,35 +1,51 @@
-/*upper navigation styles*/
-#upper > nav > ul > li > a:hover {
-	background-color: black;
-	color: white;
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 700px;
+  position: relative;
+  margin: auto;
 }
 
-/*upper navigation styles*/
-#lower > nav > ul > li > a:hover {
-	background-color:rgb(3, 4, 90);
-	color: white;
-}
-  
-.navi > nav > ul > li > a{
-    color: black;
-    text-decoration: none;
-    display: block;
-	margin-bottom: 8%;
-	font-weight: bold;
-	text-transform: uppercase;
-	padding: 8px;
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  background-position-x: 20px;
 }
 
-.navi > nav > ul > li > a:visited {
-	color: #222;
-    background-color: black;
+.active {
+  background-color: #717171;
 }
 
-/*structural styles*/
-address{
-	font-style: normal;
-	font-size: 0.9em;
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }

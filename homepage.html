@@ -35,16 +35,35 @@
        </ul>
        </nav>
     </section>
+    </header>
+  </br></br>
+  <hr style="width: 97%">
+
+  <div class="slideshow-container">
+    <div class="ActiveSlide">
+      <img src="valentine banner.jpg" style="width:100%;">
+    </div>
     
-  </header>
-
-
-
-  
+    <div class="ActiveSlide">
+      <img src="" style="width:100%">
+    </div>
+    
+    <div class="ActiveSlide">
+      <img src="" style="width:100%">
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
 
   Location: <a href="">122b, ascent</a> </br>
-  Email: <a href="mailto:SeekSeek@gmail.com">SeekSeek@gmail.com</a> 
-
+  Email: <a href="mailto:SeekSeek@gmail.com">SeekSeek@gmail.com</a>
   <footer>
     <hr style="width:97%">
     <address>
@@ -53,28 +72,16 @@
     </address>
     
  </footer>
- <!--Top button-->
- <button onclick="topFunction()" id="topbtn" title="Go to top">&#8896;<br>TOP</button>
- <script>
-   //Get the button
-   var topbutton = document.getElementById("topbtn");
-   
-   // When the user scrolls down 50px from the top of the document, show the button
-   window.onscroll = function() {scrollFunction()};
-   
-   function scrollFunction() {
-     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-       topbutton.style.display = "block";
-     } else {
-       topbutton.style.display = "none";
-     }
-   }
-   
-   // When the user clicks on the button, scroll to the top of the document
-   function topFunction() {
-     document.body.scrollTop = 0;
-     document.documentElement.scrollTop = 0;
-   }
-   </script>
+ 
+
+<!--sticky navbar and top button-->
+<button onclick="topFunction()" id="topbtn" title="Go to top">&#8896;<br>TOP</button>
+<script src="navbarandtopbutton.js"></script>
+<!--sticky navbar and top button-->
+
+
+<!--autmatic slideshow-->
+<script src="slide.js"></script>
+<!--automatic slideshow-->
 </body>
 </html>
