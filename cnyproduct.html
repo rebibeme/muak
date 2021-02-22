@@ -33,81 +33,49 @@
        </nav>
     </section>
   </header>
-
-   <table class="categorytable" id="seasonlist">
-      <tr><a href=" "><td>&#128073;&nbsp;Chinese New Year</td></a></tr>
-      <tr><a href=" "><td>&#128073;&nbsp;Valentine Day</td></a></tr>
-      <tr><a href=" "><td>&#128073;&nbsp;Hari Raya Aidilfitri</td></a></tr>
-      <tr><a href=" "><td>&#128073;&nbsp;Deepavali</td></a></tr>
-      <tr><a href=" "><td>&#128073;&nbsp;Christmas</td></a></tr>
-   </table>
-
-    <table class="categorytable" id="productlist">
-        <tr><th>CNY Products</th></tr>
-        <tr><a href=" "><td>&#128073;&nbsp;Cookies</td></a></tr>
-        <tr><a href=" "><td>&#128073;&nbsp;Decoration</td></a></tr>
-        <tr><a href=" "><td>&#128073;&nbsp;Clothes</td></a></tr>
-        <tr><a href=" "><td>&#128073;&nbsp;CD Albums</td></a></tr>
-        <tr><a href=" "><td>&#128073;&nbsp;Angpau</td></a></tr>
-    </table>    
-
+   <!-- Control buttons -->
+   <div id="productlist">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('Cookies')">Cookies</button>
+      <button class="btn" onclick="filterSelection('deco')">Decoration</button>
+      <button class="btn" onclick="filterSelection('clothes')">Clothes</button>
+      <button class="btn" onclick="filterSelection('cd')">Cd Albums</button>
+      <button class="btn" onclick="filterSelection('angpau')">Angpau</button>
+    </div>
     
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+    <div class="productpage">
+      <div class="productsection cars">
+        <img src="/products/cny/cnywindowsticker.png" alt="Red Color CNY Window Sticker"/>
+        <h1>Window Sticker</h1>
+        <p>A classic collection of 18 signature chocolates served with a romantic 
+           red rose for the special person in your life. One of our most popular
+           box sets.</p>
+        <p>$24.95</p>
+        <p><a href="#">Order Now</a></p>
+      </div>
+      <div class="productsection colors fruits">Orange</div>
+      <div class="productsection cars">Volvo</div>
+      <div class="productsection colors">Red</div>
+      <div class="productsection cars animals">Mustang</div>
+      <div class="productsection colors">Blue</div>
+      <div class="productsection animals">Cat</div>
+      <div class="productsection animals">Dog</div>
+      <div class="productsection fruits">Melon</div>
+      <div class="productsection fruits animals">Kiwi</div>
+      <div class="productsection fruits">Banana</div>
+      <div class="productsection fruits">Lemon</div>
+      <div class="productsection animals">Cow</div>
+    </div> 
+    
+    
+    <script src="/productfilter.js"></script>
 
-    <section class="productcategorypage">
-        <h1 id="intro">Hot Sellers</h1>
-        <div class="productpage">
-              <div class="productsection">
-                 <img src="cnywindowsticker.png" alt="" />
-                 <h1>Window Sticker</h1>
-                 <p>A classic collection of 18 signature chocolates served with a romantic 
-                    red rose for the special person in your life. One of our most popular
-                    box sets.</p>
-                 <p>$24.95</p>
-                 <p><a href="#">Order Now</a></p>
-              </div>
-              <div class="productsection">
-                 <img src="cnywindowsticker.png" alt="" />
-                 <h1>product w</h1>
-                 <p>Build your own collection of signature truffles
-                    and chocolates. Now you can choose old favorites from our 24-year history
-                    of award-winning chocolates and sweets.</p>
-                 <p>$32.55</p>
-                 <p><a href="#">Order Now</a></p>
-              </div>
-              <div class="productsection">
-                 <img src="cnywindowsticker.png" alt="" />
-                 <h1>Praline Signatures</h1>
-                 <p>Delicious chocolate with delicious pralines presented in a beautiful
-                    and elegant box. Enjoy this fantastic collection inspired by the best
-                    Parisian chocolate shops.</p>
-                 <p>$39.23</p>
-                 <p><a href="#">Order Now</a></p>
-              </div>
-              <div class="productsection">
-                <img src="cnywindowsticker.png" alt="" />
-                <h1>Praline Signatures</h1>
-                <p>Delicious chocolate with delicious pralines presented in a beautiful
-                   and elegant box. Enjoy this fantastic collection inspired by the best
-                   Parisian chocolate shops.</p>
-                <p>$39.23</p>
-                <p><a href="#">Order Now</a></p>
-             </div>
-             <div class="productsection">
-                <img src="cnywindowsticker.png" alt="" />
-                <h1>Praline Signatures</h1>
-                <p>Delicious chocolate with delicious pralines presented in a beautiful
-                   and elegant box. Enjoy this fantastic collection inspired by the best
-                   Parisian chocolate shops.</p>
-                <p>$39.23</p>
-                <p><a href="#">Order Now</a></p>
-             </div>
-           
-        </div>
-    </section>
 
-   <!--topbutton-->
-   <button onclick="topFunction()" id="topbtn" title="Go to top">&#8896;<br>TOP</button>
-   <script src="topbutton.js"></script>
+
+
+
+
 
 
 
