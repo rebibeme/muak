@@ -40,7 +40,6 @@ address{
 }
 
 /*chatbot*/
-
 /* Full-width input fields */
 .chatbox input[type=text], .chatbox input[type=password] {
 	width: 255px;

@@ -51,9 +51,9 @@
 	border-radius: 15px; /* Rounded corners */
 	font-size: 17px; /* Increase font size */
   }
-#topbtn:hover {
+  #topbtn:hover {
 	color: white;
-	background-color: rgb(0, 0, 105);
+	background-color: #152238;
   }
 
 
@@ -75,8 +75,8 @@
 	cursor: pointer;
 	opacity: 0.8;
 	position: fixed;
-	bottom: 10px;
-	left: 10px;
+	bottom: 17px;
+	left: 17px;
 	z-index: 90;
 	display: block;
   }
