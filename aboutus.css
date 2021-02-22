@@ -19,6 +19,31 @@ font-weight: bold;
 	
 }
 
+
+
+/*fade in animation*/
+.office {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/*fade in animation*/
+
+
+
+
+
 /*paragraph style*/
 #firstparagraph{
 	font-size: 1.5em;
@@ -100,6 +125,9 @@ float: left;
 	font-size:1.2em;
 	font-family: Georgia, grunge;
 }
+/*paragraph style*/
+
+
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
