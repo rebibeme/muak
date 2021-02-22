@@ -1,14 +1,48 @@
 #intro{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Brush Script MT', cursive;
     text-align: center;
+    color: white;
+    font-size: 3em;
+    -webkit-text-stroke: 3px maroon;
 }
 
+/*festival list*/
+.flt{
+  display: block;
+  max-width: 200px;
+  opacity: 0.7;
+}
+.flt:hover{
+  opacity: 1.0;
+}
+.fltcny{
+  position: absolute;
+  top: 470px;
+}
+.fltvalentine{
+  position: absolute;
+  top: 570px;
+}
+.flthariraya{
+  position: absolute;
+  top: 670px;
+}
+.fltdeepavali{
+  position: absolute;
+  top: 770px;
+}
+.fltchristmas{
+  position: absolute;
+  top: 870px;
+}
 
 /*product section*/
- img{
+ .productsection img{
   display: block;
   max-width: 300px;
   max-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
  }
  .productpage {
   overflow: hidden;
@@ -28,6 +62,9 @@
   display: none; /* Hidden by default */
 
 }
+.productsection{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 /* The "show" class is added to the filtered elements */
 .show {
@@ -39,7 +76,7 @@
 #productlist{
   float: left;
   position: absolute;
-  top: 300px;
+  top: 470px;
   left: 200px;
 }
 
@@ -56,6 +93,7 @@
   font-weight: bolder;
   font-size: 0.95em;
   border-radius: 5%;
+  transition-duration: 0.4s;
 }
 .btn.active {
   background-color: maroon;
