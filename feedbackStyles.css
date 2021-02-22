@@ -12,13 +12,62 @@ h1
 
 .feedback
 {
-    max-width: 800px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 	font-family:  Verdana, Geneva, Tahoma, sans-serif;
 }
 
-input
+.formfeedback
 {
-    width: 50%;
+    border-radius: 5px;
+    background-color: gray;
+    padding: 30px;
+    height: 750px;
+}
+
+.nextrow:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type=text]
+{
+    width: 100%;
+    padding: 12px;
+    border: white;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label 
+{
+    padding: 10px;
+    display: block;
+}
+
+.col-15
+{
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+}
+
+.col-70
+{
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+}
+
+textarea
+{
+    width: 120%;
+    padding: 12px;
+    border: white;
+    border-radius: 4px;
+    resize: vertical;
+    margin-left: 10px;
 }

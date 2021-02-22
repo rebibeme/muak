@@ -42,14 +42,52 @@
 
   <h1>Customer Feedback</h1>
   
-  <p>Here's some of our customers' feedbacks</p>
+  <p>Here's some of our customers' feedbacks!</p>
 
   <!--insert image of feedbacks, at least 3-->
 
-  <p> 
-    Name: <input type="text" placeholder="Enter name here"> 
-  </p>
+  <div class="formfeedback">
 
+    <div class="nextrow">
+      <div class="col-15">
+        <label for="name">Name:</label>
+      </div>
+      <div class="col-70">
+        <input type="text" id="name" name="name" placeholder="Your name..">
+      </div>
+    </div>
+
+    <br>
+
+    Please rate your experience: <br> <br>
+
+    <div class="nextrow">
+      <div class="stars">
+        <input type="radio" id="rate-5" name="stars-1">
+        <label for="rate-5">5&#9733; </label>
+        <input type="radio" id="rate-4" name="stars-1">
+        <label for="rate-4">4&#9733;</label>
+        <input type="radio" id="rate-3" name="stars-1">
+        <label for="rate-3">3&#9733;</label>
+        <input type="radio" id="rate-2" name="stars-1">
+        <label for="rate-2">2&#9733;</label>
+        <input type="radio" id="rate-1" name="stars-1">
+        <label for="rate-1">1&#9733;</label>
+      </div>
+    </div>
+
+    <div class="nextrow">
+        <label for="experience">Describe your experience: </label>
+      <div class="col-70">
+        <textarea id="exp" name="experience" placeholder="Say something.." style="height:150px"></textarea>
+      </div>
+    </div>
+
+  </div>
+
+
+
+<!--
   <p>
   Please rate your experience: <br>
 
@@ -65,7 +103,7 @@
     <input type="radio" id="rate-1" name="stars-1">
     <label for="rate-1">1&#9733;</label>
   </div>
-  
+
   </p>
 
   <p> 
@@ -80,8 +118,28 @@
   <p>
   <input type="submit"> 
   </p>
-
+-->
 </div>
+
+<!--topbutton & sticky navbar-->
+<button onclick="topFunction()" id="topbtn" title="Go to top">&#8896;<br>TOP</button>
+<script src="navbarandtopbutton.js"></script>
+
+  <!--chatbox-->
+  <script src="chatbot.js"></script>
+  <button id="chatbtn" class="open-button" onclick="chatbot()"><img src="chatbot.jpg" alt="chatbot"></button>
+  <div class="popupchatbox" id="mainchatbox">
+    <form action="/action_page.php" class="chatbox">
+      <button type="button" class="closebtn" onclick="closebot()">&#10006;</button>
+      <input type="text" placeholder="Enter message" name="message" required>
+      <button type="submit" class="sendbtn">Send</button>
+      <div class="chatmessage">
+        <img src="kanyewest.jpg" alt="botkanye" style="width:100%;">
+        <p>Hi, I am botKanye. How may I help you?</p>
+        <span class="botkanyetime">11:00</span>
+      </div>
+    </form>
+  </div>
 
   <footer>
     <hr style="width:97%">
