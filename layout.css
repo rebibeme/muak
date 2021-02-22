@@ -75,19 +75,21 @@
 	cursor: pointer;
 	opacity: 0.8;
 	position: fixed;
-	bottom: 100px;
+	bottom: 10px;
+	left: 10px;
 	z-index: 90;
 	display: block;
   }
 .open-button img{
-	width: 50px;
+	width: 70px;
 }
   
   /* The popup form - hidden by default */
   .popupchatbox {
 	display: none;
 	position: fixed;
-	bottom: 40px;
+	bottom: 10px;
+	left: 10px;
 	border: 3px solid #f1f1f1;
 	z-index: 99;
   }
