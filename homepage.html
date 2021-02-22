@@ -41,19 +41,19 @@
 
   <div class="slideshow-container">
     <div class="ActiveSlide">
-      <img src="valentine banner.jpg" style="width:100%;">
+      <img src="valentine banner3.jpg" style="width:100%;">
+    </div>
+    
+    <div class="ActiveSlide">
+      <a href="product.html"><img src="cash back banner2.jpg" style="width:100%"></a>
     </div>
     
     <div class="ActiveSlide">
       <img src="" style="width:100%">
     </div>
-    
-    <div class="ActiveSlide">
-      <img src="" style="width:100%">
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
     </div>
-    
-    </div>
-    <br>
     
     <div style="text-align:center">
       <span class="dot"></span> 
@@ -73,6 +73,25 @@
     
  </footer>
  
+<!--chatbot-->
+<script src="chatbot.js"></script>
+<button id="chatbtn" class="open-button" onclick="chatbot()"><img src="walle.png" alt="chatbot"></button>
+<div class="popupchatbox" id="mainchatbox">
+  <form action="/action_page.php" class="chatbox">
+    <button type="button" class="closebtn" onclick="closebot()">&#10006;</button>
+    <input type="text" placeholder="Enter message" name="message" required>
+    <button type="submit" class="sendbtn">Send</button>
+    <div class="chatmessage">
+      <img src="kanyewest.jpg" alt="botkanye" style="width:100%;">
+      <p>Hi, I am botKanye. How may I help you?</p>
+      <span class="botkanyetime">11:00</span>
+    </div>
+  </form>
+</div>
+
+
+
+
 
 <!--sticky navbar and top button-->
 <button onclick="topFunction()" id="topbtn" title="Go to top">&#8896;<br>TOP</button>
@@ -80,8 +99,10 @@
 <!--sticky navbar and top button-->
 
 
-<!--autmatic slideshow-->
+<!--automatic slideshow-->
 <script src="slide.js"></script>
 <!--automatic slideshow-->
+
+<script src="controlslide.js"></script>
 </body>
 </html>
