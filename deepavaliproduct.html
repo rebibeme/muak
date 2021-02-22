@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+      <meta charset="UTF-8">
+      <title> SeekSeek </title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="layout.css">
+      <link rel="stylesheet" href="product.css">
+</head>
+
+<body>  
+  <header>
+    <section id="upper" class="navi">
+      <nav>
+        <ul>
+          <li><a href="">Sign Up</a></li>
+          <li><a href="">Log in</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </nav>
+    </section>
+    <a href="homepage.html"><img src="banner.png" alt="SeekSeek Seasonal Store" class="center"/></a>
+
+    <section id="lower" class="navi">
+      <nav>
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="feedback.html">Customer feedback</a></li>   
+       </ul>
+       </nav>
+    </section>
+  </header>
+
+   </br></br>
+   <hr  style="width:97%;" >
+   <h2 id="intro" style="-webkit-text-stroke: 4px rgb(85, 0, 85);">Happy Deepavali</h2>
+
+   <div>
+      <a href="cnyproduct.html" class="flt fltcny"><img src="drake.jpg" alt="Chinese New Year"></a>
+      <a href="valentineproduct.html" class="flt fltvalentine"><img src="drake.jpg" alt="Valentine's day"></a>
+      <a href="harirayaproduct.html" class="flt flthariraya"><img src="drake.jpg" alt="Hari Raya Aildifitri"></a>
+      <a href="deepavaliproduct.html" class="flt fltdeepavali"><img src="drake.jpg" alt="Deepavali"></a>
+      <a href="christmasproduct.html" class="flt fltchristmas"><img src="drake.jpg" alt="Christmas"></a>
+   </div>
+
+   <!-- Control buttons -->
+   <div id="productlist">
+      <button class="dplbtn btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="dplbtn btn" onclick="filterSelection('cookies')">Cookies</button>
+      <button class="dplbtn btn" onclick="filterSelection('deco')">Decoration</button>
+      <button class="dplbtn btn" onclick="filterSelection('clothes')">Clothes</button>
+      <button class="dplbtn btn" onclick="filterSelection('cd')">CD Albums</button>
+      <button class="dplbtn btn" onclick="filterSelection('angpau')">Angpau</button>
+    </div>
+    
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+    <div class="productpage">
+      <div class="productsection deco">
+        <a href=" "><img src="/products/cny/cnywindowsticker.png" alt="Red Color CNY Window Sticker"/></a>
+        <h2>Window Sticker</h2>
+        <p>A classic collection of 18 signature chocolates served with a romantic 
+           red rose for the special person in your life. One of our most popular
+           box sets.</p>
+        <p>$24.95</p>
+        <p><a href="#">Order Now</a></p>
+      </div>
+      <div class="productsection cookies">
+         <a href=" "><img src="/products/cny/popcorncaramel.png" alt="Yellow Color Caramel Popcorn"/></a>
+         <h2>Caramel Popcorn</h2>
+         <p>A classic collection of 18 signature chocolates served with a romantic 
+            red rose for the special person in your life. One of our most popular
+            box sets.</p>
+         <p>$24.95</p>
+         <p><a href="#">Order Now</a></p>
+      </div>
+         
+      <div class="productsection deco">
+         <a href=" "><img src="/products/cny/cnyhook1.png" alt="Red Color CNY Hook Decoration"/></a>
+         <h2>Hook Style Decoration</h2>
+         <p>RM 18.88</p>
+         <p><a href="#">Order Now</a></p>
+      </div>
+      <div class="productsection angpau">
+         <a href=" "><img src="/products/cny/cowangpau1.png" alt="Red Color Angpau with Cow Picture"/></a>
+         <h2>Year Of The Ox Red Packet</h2>
+         <p>A classic collection of 18 signature chocolates served with a romantic 
+           red rose for the special person in your life. One of our most popular
+           box sets.</p>
+         <p>$24.95</p>  
+         <p><a href="#">Order Now</a></p>
+      </div>
+      <div class="productsection cars animals">Mustang</div>
+      <div class="productsection colors">Blue</div>
+      <div class="productsection animals">Cat</div>
+      <div class="productsection animals">Dog</div>
+      <div class="productsection fruits">Melon</div>
+      <div class="productsection fruits animals">Kiwi</div>
+      <div class="productsection fruits">Banana</div>
+      <div class="productsection fruits">Lemon</div>
+      <div class="productsection animals">Cow</div>
+    </div> 
+    
+    
+   <script src="/productfilter.js"></script>
+   
+   <!--topbutton & sticky navbar-->
+   <button onclick="topFunction()" id="topbtn" title="Go to top">&#8896;<br>TOP</button>
+   <script src="navbarandtopbutton.js"></script>
+
+   <!--chatbox-->
+   <script src="chatbot.js"></script>
+   <button id="chatbtn" class="open-button" onclick="chatbot()"><img src="chatbot.jpg" alt="chatbot"></button>
+   <div class="popupchatbox" id="mainchatbox">
+     <form action="/action_page.php" class="chatbox">
+       <button type="button" class="closebtn" onclick="closebot()">&#10006;</button>
+       <input type="text" placeholder="Enter message" name="message" required>
+       <button type="submit" class="sendbtn">Send</button>
+       <div class="chatmessage">
+         <img src="kanyewest.jpg" alt="botkanye" style="width:100%;">
+         <p>Hi. How may I help you?</p>
+         <span class="botkanyetime">11:00</span>
+       </div>
+     </form>
+   </div>
+
+
+
+
+  <footer>
+    <hr style="width:97%">
+    <address>
+      &#x263A; 2077 SeekSeek. NO Rights Reserved<br>
+      SeekSeek &nbsp;&#x2606;&nbsp; 122b, ascent &nbsp;&#x2606;&nbsp; 04-123 456
+    </address>
+    
+ </footer>
+</body>
+</html>
