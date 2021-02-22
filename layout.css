@@ -68,3 +68,54 @@
   }
 
 
+/*chatbot*/
+.open-button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	opacity: 0.8;
+	position: fixed;
+	bottom: 50px;
+	left: 50px;
+	z-index: 90;
+	display: block;
+  }
+  
+  /* The popup form - hidden by default */
+  .popupchatbox {
+	display: none;
+	position: fixed;
+	bottom: 40px;
+	border: 3px solid #f1f1f1;
+	z-index: 99;
+  }
+  
+  /* Add styles to the form container */
+  .chatbox {
+	width: 310px;
+	padding: 10px;
+	height: 500px;
+	background-color: gray;
+  }
+  /* When the inputs get focus, do something */
+  .chatbox input[type=text]:focus, .chatbox input[type=password]:focus {
+	background-color: whitesmoke;
+	outline: none;
+  }
+  
+  /*chat message*/
+  .chatmessage::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+  .chatmessage img {
+	float: left;
+	max-width: 60px;
+	max-height: 60px;
+	width: 100%;
+	margin-right: 20px;
+	border-radius: 50%;
+  }
+  
+  

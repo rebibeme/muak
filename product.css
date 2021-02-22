@@ -1,14 +1,50 @@
 #intro{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Brush Script MT', cursive;
     text-align: center;
+    color: white;
+    font-size: 3em;
+    
 }
 
+/*festival list*/
+.flt img{
+  max-height: 90px;
+  max-width: 190px;
+}
+.flt{
+  opacity: 0.7;
+}
+.flt:hover{
+  opacity: 1.0;
+}
+.fltcny{
+  position: absolute;
+  top: 470px;
+}
+.fltvalentine{
+  position: absolute;
+  top: 570px;
+}
+.flthariraya{
+  position: absolute;
+  top: 670px;
+}
+.fltdeepavali{
+  position: absolute;
+  top: 770px;
+}
+.fltchristmas{
+  position: absolute;
+  top: 870px;
+}
 
 /*product section*/
- img{
+ .productsection img{
   display: block;
   max-width: 300px;
   max-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
  }
  .productpage {
   overflow: hidden;
@@ -28,6 +64,9 @@
   display: none; /* Hidden by default */
 
 }
+.productsection{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 /* The "show" class is added to the filtered elements */
 .show {
@@ -39,16 +78,14 @@
 #productlist{
   float: left;
   position: absolute;
-  top: 300px;
+  top: 470px;
   left: 200px;
 }
 
 .btn {
-  border: 2px solid maroon;
   width: 110px;
   height: 50px;
   background-color: white;
-  color: maroon;
   cursor: pointer;
   margin: 5px;
   display: block;
@@ -56,14 +93,77 @@
   font-weight: bolder;
   font-size: 0.95em;
   border-radius: 5%;
-}
-.btn.active {
-  background-color: maroon;
-  color: white;
+  transition-duration: 0.4s;
 }
 .btn:hover {
-  background-color: maroon;
+  color: white;
+}
+.btn.active {
   color: white;
 }
 
+.cnybtn{
+  border: 2px solid maroon;
+  color: maroon;
+}
+.cnybtn.active {
+  background-color: maroon;
+}
+.cnybtn:hover {
+  background-color: maroon;
+}
 
+.valbtn{
+  border: 2px solid rgb(223, 122, 139);
+  color: rgb(223, 122, 139);
+}
+.valbtn.active {
+  background-color: rgb(223, 122, 139);
+}
+.valbtn:hover {
+  background-color: rgb(223, 122, 139);
+}
+
+.haribtn{
+  border: 2px solid rgb(1, 97, 1);
+  color: rgb(1, 97, 1);
+}
+.haribtn.active {
+  background-color: rgb(1, 97, 1);
+}
+.haribtn:hover {
+  background-color: rgb(1, 97, 1);
+}
+
+.dplbtn{
+  border: 2px solid rgb(85, 0, 85);
+  color: rgb(85, 0, 85);
+}
+.dplbtn.active {
+  background-color: rgb(85, 0, 85);
+}
+.dplbtn:hover {
+  background-color: rgb(85, 0, 85);
+}
+
+.dplbtn{
+  border: 2px solid rgb(85, 0, 85);
+  color: rgb(85, 0, 85);
+}
+.dplbtn.active {
+  background-color: rgb(85, 0, 85);
+}
+.dplbtn:hover {
+  background-color: rgb(85, 0, 85);
+}
+
+.chtbtn{
+  border: 2px solid #165b33;
+  color: #bb2528;
+}
+.chtbtn.active {
+  background-color: #146b3a;
+}
+.chtbtn:hover {
+  background-color: #bb2528;
+}
