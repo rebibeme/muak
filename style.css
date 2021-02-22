@@ -6,7 +6,7 @@
 
 /*upper navigation styles*/
 #lower > nav > ul > li > a:hover {
-	background-color:rgb(3, 4, 90);
+	background-color:#152238;
 	color: white;
 }
 
@@ -40,7 +40,6 @@ address{
 }
 
 /*chatbot*/
-
 /* Full-width input fields */
 .chatbox input[type=text], .chatbox input[type=password] {
 	width: 255px;
