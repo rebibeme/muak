@@ -34,6 +34,25 @@
   </header>
 
 
+  <!--topbutton & sticky navbar-->
+  <button onclick="topFunction()" id="topbtn" title="Go to top">&#8896;<br>TOP</button>
+  <script src="navbarandtopbutton.js"></script>
+
+  <!--chatbox-->
+  <script src="chatbot.js"></script>
+  <button id="chatbtn" class="open-button" onclick="chatbot()"><img src="chatbot.jpg" alt="chatbot"></button>
+  <div class="popupchatbox" id="mainchatbox">
+    <form action="/action_page.php" class="chatbox">
+      <button type="button" class="closebtn" onclick="closebot()">&#10006;</button>
+      <input type="text" placeholder="Enter message" name="message" required>
+      <button type="submit" class="sendbtn">Send</button>
+      <div class="chatmessage">
+        <img src="kanyewest.jpg" alt="botkanye" style="width:100%;">
+        <p>Hi, I am botKanye. How may I help you?</p>
+        <span class="botkanyetime">11:00</span>
+      </div>
+    </form>
+  </div>
 
 
 
