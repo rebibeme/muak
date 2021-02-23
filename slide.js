@@ -1,4 +1,4 @@
-var slideIndex = 0;
+var no_of_slides = 0;
 showSlides(); 
 
 function showSlides() {
@@ -8,38 +8,38 @@ function showSlides() {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  no_of_slides++;
+  if (no_of_slides > slides.length) {no_of_slides = 1}    
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
+  slides[no_of_slides-1].style.display = "block";  
+  dots[no_of_slides-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
 
-showSlides1(slideIndex);
+showSlides1(no_of_slides);
 
 function plusSlides(n) {
-  showSlides1(slideIndex += n);
+  showSlides1(no_of_slides += n);
 }
 
 function currentSlide(n) {
-  showSlides1(slideIndex = n);
+  showSlides1(no_of_slides = n);
 }
 
 function showSlides1(n) {
   var i;
   var slides = document.getElementsByClassName("ActiveSlide");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {no_of_slides = 1}    
+  if (n < 1) {no_of_slides = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  slides[no_of_slides-1].style.display = "block";  
+  dots[no_of_slides-1].className += " active";
 }
