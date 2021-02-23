@@ -38,18 +38,19 @@
 #fb img{
 	width: 30px;
 	position: relative;
-	bottom:0.4px;
+	bottom:0.45px;
   }
   
   #twitter img{
 	width: 22px;
 	position: relative;
 	top: 3px;
+	bottom: 0.45px;
   }
   #ig img{
 	position: relative;
-	bottom: 1px;
-	width: 30px;
+	bottom: 0.8px;
+	width: 29.5px;
   }
   
   .icon{
