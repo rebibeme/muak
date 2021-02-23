@@ -72,3 +72,22 @@ img {vertical-align: middle;}
   from {opacity: 0.4} 
   to {opacity: 1}
 }
+
+/*icon*/
+#fb img{
+  width: 30px;
+}
+
+#twitter img{
+  width: 22px;
+  position: relative;
+  top: 3.5px;
+}
+#ig img{
+  
+  width: 30px;
+}
+
+.icon{
+  float:left;
+}
