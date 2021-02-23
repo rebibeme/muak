@@ -34,7 +34,29 @@
   	margin-right: auto;
   	width: 50%;
 }
-
+/*icon*/
+#fb img{
+	width: 30px;
+	position: relative;
+	bottom:0.4px;
+  }
+  
+  #twitter img{
+	width: 22px;
+	position: relative;
+	top: 3px;
+  }
+  #ig img{
+	position: relative;
+	bottom: 1px;
+	width: 30px;
+  }
+  
+  .icon{
+	float:left;
+  }
+  /*icon end*/
+  
 /*Top button*/
 #topbtn {
 	display: none; /* Hidden by default */
