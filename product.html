@@ -5,6 +5,7 @@
       <title> SeekSeek </title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="layout.css">
+      <link rel="stylesheet" href="product.css">
 </head>
 
 <body>  
@@ -32,12 +33,30 @@
        </nav>
     </section>
   </header>
-  
-  <div>
-    <a href="cnyproduct.html"><img src="drake.jpg" alt="Chinese New Year"></a>
-  
 
+  <div class="slideshow-container">
+    <div class="ActiveSlide">
+      <a href="cnyproduct.html"><img src="products/cnybanner.png" alt="Happy Chinese New Year"></a>
+    </div>
+    
+    <div class="ActiveSlide">
+      <a href="valentineproduct.html"><img src="products/valbanner.png" alt="Happly Valentine's Day"></a>
+    </div>
+    
+    <div class="ActiveSlide">
+      <a href="valentineproduct.html"><img src="products/christbanner.jpg" alt="Merry Chirstmas"></a>
+    </div>
 
+    
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+  </div>
+    
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
 
 
 
@@ -47,7 +66,14 @@
       &#x263A; 2077 SeekSeek. NO Rights Reserved<br>
       SeekSeek &nbsp;&#x2606;&nbsp; 122b, ascent &nbsp;&#x2606;&nbsp; 04-123 456
     </address>
-    
  </footer>
+
+
+ <!--automatic slideshow-->
+<script src="slide.js"></script>
+<!--automatic slideshow-->
+<script src="controlslide.js"></script>
+
+</body>
 </body>
 </html>
