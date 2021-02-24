@@ -42,7 +42,7 @@ input[type=text]
     resize: vertical;
 }
 
-label 
+label
 {
     padding: 10px;
     display: block;
@@ -71,3 +71,4 @@ textarea
     resize: vertical;
     margin-left: 10px;
 }
+
