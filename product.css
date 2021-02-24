@@ -3,7 +3,6 @@
     text-align: center;
     color: white;
     font-size: 3em;
-    
 }
 
 /*festival list*/
@@ -169,10 +168,9 @@
   background-color: #bb2528;
 }
 
-
 /* Slideshow container */
 .slideshow-container {
-  width: 95%;
+  width: 90%;
   position: relative;
   margin: auto;
 }
