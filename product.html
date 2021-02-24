@@ -5,6 +5,7 @@
       <title> SeekSeek </title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="layout.css">
+      <link rel="stylesheet" href="product.css">
 </head>
 
 <body>  
@@ -32,14 +33,55 @@
        </nav>
     </section>
   </header>
-  
-  <div>
-    <a href="cnyproduct.html"><img src="drake.jpg" alt="Chinese New Year"></a>
-  
+    </br></br>
+    <hr style="width: 97%">
+    <h2 id="intro" style="-webkit-text-stroke: 3px black;">Shop for Your Favourite Festival</h2>
+
+    <div class="slideshow-container">
+      <div class="ActiveSlide">
+        <a href="cnyproduct.html"><img src="products/cnybanner.png" alt="Happy Chinese New Year"></a>
+      </div>
+
+      <div class="ActiveSlide">
+        <a href="valentineproduct.html"><img src="products/valbanner.png" alt="Happly Valentine's Day"></a>
+      </div>
+
+      <div class="ActiveSlide">
+        <a href="christmasproduct.html"><img src="products/christbanner.jpg" alt="Merry Chirstmas"></a>
+      </div>
 
 
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
 
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
 
+    <h2 id="intro" style="-webkit-text-stroke: 3px black;">Hot Items</h2>
+    <div class="productpage">
+      <div class="productsection cnydeco">
+        <a href=" "><img src="products/cny/cnywindowsticker.png" alt="Red Color CNY Window Sticker"/></a>
+        <h2>Window Sticker</h2>
+        <p>A classic red sticker sets with special and beautiful design and cuts.</p>
+        <p>Sticker can be removed easily from glass.</p>
+        <p>RM 26.96</p>
+        <p><a href="#">Order Now</a></p>
+      </div>
+      <div class="productsection cnycd">
+        <a href=" "><img src="products/cny/cnycd.png" alt="Red Color Angpau with Cow Picture"/></a>
+        <h2>Genie CNY CD Album</h2>
+        <p>CD Album from famous singer - Genie which consist of 6 Chinese New Year songs.</p>
+        <p>Buy and he will grant you a wish!!!</p>
+        <p>RM 38.80</p>  
+        <p><a href="#">Order Now</a></p>
+     </div>
+    </div>
+
+    <script src="productfilter.js"></script>
 
   <footer>
     <hr style="width:97%">
@@ -47,7 +89,34 @@
       &#x263A; 2077 SeekSeek. NO Rights Reserved<br>
       SeekSeek &nbsp;&#x2606;&nbsp; 122b, ascent &nbsp;&#x2606;&nbsp; 04-123 456
     </address>
-    
  </footer>
+
+
+<!--automatic slideshow-->
+<script src="slide.js"></script>
+<!--automatic slideshow-->
+<script src="controlslide.js"></script>
+<!--filter product-->
+<script src="productfilter.js"></script>
+<!--topbutton & sticky navbar-->
+<button onclick="topFunction()" id="topbtn" title="Go to top">&#8896;<br>TOP</button>
+<script src="navbarandtopbutton.js"></script>
+<!--chatbox-->
+<script src="chatbot.js"></script>
+<button id="chatbtn" class="open-button" onclick="chatbot()"><img src="walle.png" alt="chatbot"></button>
+<div class="popupchatbox" id="mainchatbox">
+  <form action="/action_page.php" class="chatbox">
+    <button type="button" class="closebtn" onclick="closebot()">&#10006;</button>
+    <input type="text" placeholder="Enter message" name="message" required>
+    <button type="submit" class="sendbtn">Send</button>
+    <div class="chatmessage">
+       <img src="kanyewest.jpg" alt="botkanye" style="width:100%;">
+       <p>Hi, I am botKanye. How may I help you?</p>
+       <span class="botkanyetime">11:00</span>
+    </div>
+  </form>
+</div>
+
+</body>
 </body>
 </html>
