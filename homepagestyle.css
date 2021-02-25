@@ -68,11 +68,10 @@
 	}
 }
 /*fade in animation*/
-#video1{
-  margin: 0 auto; 
-  margin-left: auto;
-  margin-right: auto;
- width: max-content;
+#video1 video{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
   }
 
 .chocolatevideo>h1{
@@ -80,7 +79,7 @@
 }
 
 .feslink{
-  width: 91%;
+  width: 90%;
   margin: auto;
   position: relative;
 }
@@ -88,7 +87,7 @@
   display: block;
   float: left;
   margin: 0;
-  padding: 5px;
+  padding: 2px;
   width: 49%;
 }
 .fesrow::after {
