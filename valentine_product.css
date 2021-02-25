@@ -1,0 +1,20 @@
+.valproduct img{
+    float: left;
+	height: 500px;
+	margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+h1{
+    margin-left: 20px;
+    display:block;
+}
+article p{
+    display: block;
+    font-weight: bold;
+}
+.ratingicon{
+    float:left;
+}
