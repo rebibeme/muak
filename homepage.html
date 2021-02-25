@@ -118,3 +118,42 @@
 <script src="slide.js"></script>
 </body>
 </html>
+
+<section class="feslink">
+  <div class="fesrow">
+    <div class="fescolumn">
+        <a href="cnyproduct.html"><img src="products/cnybanner2.jpg"></a>
+    </div>
+    <div class="fescolumn">
+      <a href="valentineproduct.html"><img src="products/valbanner2.jpg"></a>
+    </div>
+    <div class="fescolumn">
+      <a href="christmasproduct.html"><img src="products/christbanner2.jpg"></a>
+    </div>
+    <div class="fescolumn">
+      <a href="harirayaproduct.html"><img src="products/harirayabanner2.jpg"></a>
+    </div>
+    <div class="fescolumn">
+      <a href="deepavaliproduct.html"><img src="products/deepbanner2.png"></a>
+    </div>
+  </div>
+</section>
+
+
+.feslink{
+  width: 91%;
+  margin: auto;
+  position: relative;
+}
+.fescolumn img{
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 5px;
+  width: 49%;
+}
+.fesrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
