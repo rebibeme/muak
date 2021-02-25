@@ -1,10 +1,3 @@
-#intro{
-    font-family: cursive;
-    text-align: center;
-    color: white;
-    font-size: 3em;
-}
-
 /*festival list*/
 .flt img{
   max-height: 150px;
@@ -49,11 +42,9 @@
   margin: 5px;
   border: 1px solid black;
   display: none; /* Hidden by default */
-
-}
-.productsection{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 
 /* The "show" class is added to the filtered elements */
 .show {
@@ -82,78 +73,6 @@
   border-radius: 5%;
   transition-duration: 0.4s;
 }
-.btn:hover {
-  color: white;
-}
-.btn.active {
-  color: white;
-}
-
-.cnybtn{
-  border: 2px solid maroon;
-  color: maroon;
-}
-.cnybtn.active {
-  background-color: maroon;
-}
-.cnybtn:hover {
-  background-color: maroon;
-}
-
-.valbtn{
-  border: 2px solid rgb(223, 122, 139);
-  color: rgb(223, 122, 139);
-}
-.valbtn.active {
-  background-color: rgb(223, 122, 139);
-}
-.valbtn:hover {
-  background-color: rgb(223, 122, 139);
-}
-
-.haribtn{
-  border: 2px solid rgb(1, 97, 1);
-  color: rgb(1, 97, 1);
-}
-.haribtn.active {
-  background-color: rgb(1, 97, 1);
-}
-.haribtn:hover {
-  background-color: rgb(1, 97, 1);
-}
-
-.dplbtn{
-  border: 2px solid rgb(85, 0, 85);
-  color: rgb(85, 0, 85);
-}
-.dplbtn.active {
-  background-color: rgb(85, 0, 85);
-}
-.dplbtn:hover {
-  background-color: rgb(85, 0, 85);
-}
-
-.dplbtn{
-  border: 2px solid rgb(85, 0, 85);
-  color: rgb(85, 0, 85);
-}
-.dplbtn.active {
-  background-color: rgb(85, 0, 85);
-}
-.dplbtn:hover {
-  background-color: rgb(85, 0, 85);
-}
-
-.chtbtn{
-  border: 2px solid #165b33;
-  color: #bb2528;
-}
-.chtbtn.active {
-  background-color: #146b3a;
-}
-.chtbtn:hover {
-  background-color: #bb2528;
-}
 
 /* Slideshow container */
 .slideshow-container {
@@ -164,34 +83,29 @@
 
 /* Next & previous buttons */
 .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    text-align: center;
-    width: 1.5%;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.4s ease;
-    border-radius: 50%;
-    user-select: none;
-    margin: 5px;
-    padding: 2px;
-  }
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  text-align: center;
+  width: 1.5%;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.4s ease;
+  border-radius: 50%;
+  user-select: none;
+  margin: 5px;
+  padding: 2px;
+}
   
   /* Position the "next button" to the right */
   .next {
     right: 0;
   }
   
-  /* On hover, add a grey background color */
-  .prev:hover, .next:hover {
-    background-color: white;
-    color: black;
-  }
 
-/* The dots/bullets/indicators */
+/* The dots*/
 .dot {
   height: 3px;
   width: 100px;
@@ -236,11 +150,64 @@
   margin-top: 5px;
 }
 
-
-
+/*hot item*/
 .hotitem{
-  background-color: rgb(65, 129, 0);
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
+  padding: 0;
 }
+.httcontainer{
+  width: 1280px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.httcontainer .httbox{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.httcontainer .httbox .imgbox{
+  position: relative;
+}
+.httcontainer .httbox .imgbox img{
+  max-width: 100%;
+  transition: transform 2s;
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.httbox:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  cursor: pointer;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+

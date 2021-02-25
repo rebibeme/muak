@@ -1,0 +1,87 @@
+#intro{
+    font-family: cursive;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
+.btn:hover {
+    color: white;
+  }
+.btn.active {
+    color: white;
+  }
+
+  /*filter button*/
+.cnybtn{
+  border: 2px solid maroon;
+  color: maroon;
+}
+.cnybtn.active {
+  background-color: maroon;
+}
+.cnybtn:hover {
+  background-color: maroon;
+}
+
+.valbtn{
+  border: 2px solid rgb(223, 122, 139);
+  color: rgb(223, 122, 139);
+}
+.valbtn.active {
+  background-color: rgb(223, 122, 139);
+}
+.valbtn:hover {
+  background-color: rgb(223, 122, 139);
+}
+
+.haribtn{
+  border: 2px solid rgb(1, 97, 1);
+  color: rgb(1, 97, 1);
+}
+.haribtn.active {
+  background-color: rgb(1, 97, 1);
+}
+.haribtn:hover {
+  background-color: rgb(1, 97, 1);
+}
+
+.dplbtn{
+  border: 2px solid rgb(85, 0, 85);
+  color: rgb(85, 0, 85);
+}
+.dplbtn.active {
+  background-color: rgb(85, 0, 85);
+}
+.dplbtn:hover {
+  background-color: rgb(85, 0, 85);
+}
+
+.dplbtn{
+  border: 2px solid rgb(85, 0, 85);
+  color: rgb(85, 0, 85);
+}
+.dplbtn.active {
+  background-color: rgb(85, 0, 85);
+}
+.dplbtn:hover {
+  background-color: rgb(85, 0, 85);
+}
+
+.chtbtn{
+  border: 2px solid #165b33;
+  color: #bb2528;
+}
+.chtbtn.active {
+  background-color: #146b3a;
+}
+.chtbtn:hover {
+  background-color: #bb2528;
+}
+  
+/*next button on banner*/
+.prev:hover, .next:hover {
+    background-color: white;
+    color: black;
+  }
+    
