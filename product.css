@@ -228,60 +228,18 @@
 }
 /*fade in animation*/
 
-.feslink{
-  width: 91%;
-  margin: auto;
-  position: relative;
-}
-.fescolumn img{
+/*image map*/
+.maplist img{
   display: block;
-  float: left;
-  margin: 0;
-  padding: 5px;
-  width: 49%;
-}
-.fesrow::after {
-  content: "";
-  clear: both;
-  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
 }
 
 
-.container {
-  position: relative;
-}
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-  z-index: 99;
-}
-
-.container:hover .overlay {
-  height: 100%;
-}
-
-.text {
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
 
 .hotitem{
-  background-color: black;
+  background-color: rgb(65, 129, 0);
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
