@@ -70,8 +70,9 @@
 /*fade in animation*/
 #video1{
   margin: 0 auto; 
-  margin-left: 55px;
+  margin-left: auto;
   margin-right: auto;
+width: max-content;
   }
 
 .chocolatevideo>h1{
