@@ -68,3 +68,30 @@
 	}
 }
 /*fade in animation*/
+#video1{
+  margin: 0 auto; 
+  margin-left: 50px;
+  margin-right: auto;
+  }
+
+.chocolatevideo>h1{
+  text-align: center;
+}
+
+.feslink{
+  width: 91%;
+  margin: auto;
+  position: relative;
+}
+.fescolumn img{
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 5px;
+  width: 49%;
+}
+.fesrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
