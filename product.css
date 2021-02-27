@@ -57,8 +57,7 @@
 #productlist{
   float: left;
   position: absolute;
-  margin-top: 10px;
-  margin-left: 90px;
+  left: 5%;
 }
 
 .btn {
@@ -233,7 +232,7 @@
 /*coming soon image*/
 
 .combox{
-  margin-left: 220px;
+  margin-left: auto;
   margin-top: 30px;
   position: relative;
   background-color: burlywood;
