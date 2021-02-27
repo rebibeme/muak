@@ -210,16 +210,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.soonimg{
-  max-width: 1200px;
-  height: 600px;
-  margin-left: 300px;
-}
-.soonimg img{
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-}
+
 .text h2{
   color: black;
 }
