@@ -21,10 +21,10 @@
 }
 .navi > nav > ul > li{
 	display: table-cell;
-	text-align: center;
 }
 .navi > nav > ul > li > a{
 	display: block;
+	text-align: center;
 }
 
 /*photo center*/
