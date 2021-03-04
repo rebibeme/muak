@@ -28,20 +28,15 @@
 }
 
 .faqbanner{
-  display: flex;
   background-color: black;
-  margin-top: 50px;
-  justify-content: center;
-  align-items: center;
-}
-.faqbanner p{
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
   font-size: 4vw;
+  color: aliceblue;
+  margin-top: 50px;
+  padding: 8%;
   font-family: cursive;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
 }
 
 /*dropdown menu*/
@@ -94,3 +89,4 @@
 #topq3{
   scroll-margin-top: 100px;
 }
+
