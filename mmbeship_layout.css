@@ -1,15 +1,22 @@
 .signUp{
-    border-style: ridge;
-    text-align: center;
-    border-width: medium;
-    border-color: black;
-    border-radius: 5px;
-    margin-top: 50px;
-    margin-left: 450px;
-    margin-right: 450px;
-    height: 350px;
+    padding: 16px;
 }
 
-.signUp>h2{
-    text-align: ;
+.signUp>input[type="text"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.signUp>input[type="submit"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #4CAF50;
 }
