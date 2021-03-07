@@ -1,8 +1,15 @@
-h1{
-
-}
-.resForm{
-    text-align: center;
-    background-color: darkgray;
+.signUp{
     border-style: ridge;
+    text-align: center;
+    border-width: medium;
+    border-color: black;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 450px;
+    margin-right: 450px;
+    height: 350px;
+}
+
+.signUp>h2{
+    text-align: ;
 }
