@@ -1,7 +1,8 @@
 h1{
-    text-align: left;
-}
 
-form{
-    text-align: left;
+}
+.resForm{
+    text-align: center;
+    background-color: darkgray;
+    border-style: ridge;
 }
