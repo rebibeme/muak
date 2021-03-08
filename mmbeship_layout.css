@@ -1,3 +1,6 @@
+body{
+    font-family: "Comic Sans MS";
+}
 div{
     width: 40%;
     border-style: ridge;
@@ -9,6 +12,10 @@ div{
 
 .signUp{
     padding: 16px;
+}
+
+.signUp>h2{
+    font-size: xx-large;
 }
 
 .signUp>input[type="text"]{
