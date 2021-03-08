@@ -1,3 +1,12 @@
+div{
+    width: 40%;
+    border-style: ridge;
+    border-radius: 15px;
+    border-width: 40%;
+    margin: auto;
+    margin-top: 30;
+}
+
 .signUp{
     padding: 16px;
 }
@@ -20,4 +29,9 @@
     box-sizing: border-box;
     background-color: #4CAF50;
     opacity: 0.9;
+}
+
+.signUp>input[type="submit"]:hover
+{
+    opacity: 1;
 }
