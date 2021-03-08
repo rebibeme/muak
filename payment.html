@@ -2,10 +2,10 @@
 <html lang="en" style="scroll-behavior: smooth;">
 <head>
       <meta charset="UTF-8">
-      <title> SeekSeek SignUp </title>
+      <title> SeekSeek </title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="layout.css">
-      <link rel="stylesheet" href="mmbeship_layout.css">
+      <link rel="stylesheet" href="payment.css">
 </head>
 
 <body>  
@@ -35,13 +35,39 @@
     </section>
   </header>
 
-<div class="signUp">
-  <h2>Sign Up</h2>
-  <label for="phoneno">Phone Number</label><br>
-  <input type="text" id="phoneno" name="phoneno" placeholder="Enter Phone Number" required><br>
+</br></br>
+<hr style="width: 97%">
 
-  <br><input type="submit" value="Next">
+<h1>Payment!</h1>
+
+<div class="payLayout">
+    <div class="paybackground">
+        
+    </div>
 </div>
+
+  <!--topbutton & sticky navbar-->
+  <button onclick="topFunction()" id="topbtn" title="Go to top">&#8896;<br>TOP</button>
+  <script src="navbarandtopbutton.js"></script>
+
+  <!--chatbox-->
+  <script src="chatbot.js"></script>
+  <button id="chatbtn" class="open-button" onclick="chatbot()"><img src="walle.png" alt="chatbot"></button>
+  <div class="popupchatbox" id="mainchatbox">
+    <form action="/action_page.php" class="chatbox">
+      <button type="button" class="closebtn" onclick="closebot()">&#10006;</button>
+      <input type="text" placeholder="Enter message" name="message" required>
+      <button type="submit" class="sendbtn">Send</button>
+      <div class="chatmessage">
+        <img src="kanyewest.jpg" alt="botkanye" style="width:100%;">
+        <p>Hi, I am botKanye. How may I help you?</p>
+        <span class="botkanyetime">11:00</span>
+      </div>
+    </form>
+  </div>
+
+
+
 
   <footer>
     <hr style="width:97%">

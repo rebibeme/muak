@@ -28,6 +28,7 @@
           <li><a href="product.html">Product</a></li>
           <li><a href="aboutus.html">About Us</a></li>
           <li><a href="faq.html">FAQ</a></li>
+          <li><a href="payment.html">Payment</a></li>
           <li><a href="feedback.html">Customer feedback</a></li>   
        </ul>
        </nav>
@@ -38,87 +39,87 @@
 </br></br>
 <hr style="width: 97%">
 
-  <div class="feedback">
-
-  <h1>Customer Feedback</h1>
+<div class="feedback">
   
-  <p>Here's some of our customers' feedbacks!</p>
-
-  <!--insert image of feedbacks, at least 3-->
-
-  <div class="formfeedback">
-
-    <div class="nextrow">
-      <div class="col-15">
-        <label for="name">Name:</label>
-      </div>
-      <div class="col-70">
-        <input type="text" id="name" name="name" placeholder="Your name..">
-      </div>
-    </div>
-
-    <br>
+    <h1>Customer Feedback</h1>
     
-    <label for="name">Please rate your experience:</label>
-
-    <div class="nextrow">
-      <div class="stars" style="text-align: center;">
-        <input type="radio" id="ratestars" name="stars-5">
-        5&#9733;
-        <input type="radio" id="ratestars" name="stars-4">
-        4&#9733;
-        <input type="radio" id="ratestars" name="stars-3">
-        3&#9733;
-        <input type="radio" id="ratestars" name="stars-2">
-        2&#9733;
-        <input type="radio" id="ratestars" name="stars-1">
-        1&#9733;
-      </div>
-    </div>
-
-    <div class="nextrow">
-        <label for="experience">Describe your experience: </label>
-      <div class="col-70">
-        <textarea id="exp" name="experience" placeholder="Say something.." style="height:150px"></textarea>
-      </div>
-    </div>
-
-  </div>
-
-
-
-<!--
-  <p>
-  Please rate your experience: <br>
-
-  <div class="stars">
-    <input type="radio" id="rate-5" name="stars-1">
-    <label for="rate-5">5&#9733; </label>
-    <input type="radio" id="rate-4" name="stars-1">
-    <label for="rate-4">4&#9733;</label>
-    <input type="radio" id="rate-3" name="stars-1">
-    <label for="rate-3">3&#9733;</label>
-    <input type="radio" id="rate-2" name="stars-1">
-    <label for="rate-2">2&#9733;</label>
-    <input type="radio" id="rate-1" name="stars-1">
-    <label for="rate-1">1&#9733;</label>
-  </div>
-
-  </p>
-
-  <p> 
-  Your Feedback: <br> <br>
-  <input style="width: fit-content;" type="text" placeholder="Write something to describe your experience!"> 
-  </p>
+    <p>Here's some of our customers' feedbacks!</p>
   
-  <p>
-  Attach a photo of your product!! <br> <br> <input type="file"> <br> <br>
-  </p>
-
-  <p>
-  <input type="submit"> 
-  </p>
--->
+    <!--insert image of feedbacks, at least 3-->
+  <form action="feedback.php">
+    <div class="formfeedback">
+  
+      <div class="nextrow">
+        <div class="col-15">
+          <label for="name">Name:</label>
+        </div>
+        <div class="col-70">
+          <input type="text" id="name" name="name" placeholder="Your name..">
+        </div>
+      </div>
+  
+      <br>
+      
+      <div class="nextrow">
+        <div class="col-15">
+          <label for="email">Email:</label>
+        </div>
+        <div class="col-70">
+          <input type="email" placeholder="john@gmail.com, for">
+        </div>
+      </div>
+  
+      <br>
+  
+      <label for="name">Please rate your experience:</label>
+  
+      <div class="nextrow">
+        <div class="col-70">
+          <input type="radio" id="ratestars5" name="stars" checked> 
+          5&#9733;
+          <input type="radio" id="ratestars4" name="stars">
+          4&#9733;
+          <input type="radio" id="ratestars3" name="stars">
+          3&#9733;
+          <input type="radio" id="ratestars2" name="stars">
+          2&#9733;
+          <input type="radio" id="ratestars1" name="stars">
+          1&#9733;
+        </div>
+      </div>
+      
+      <br>
+  
+      <div class="nextrow">
+          <label for="experience">Describe your experience: </label>
+        <div class="col-70">
+          <textarea id="exp" name="experience" placeholder="Say something.." style="height:150px"></textarea>
+        </div>
+      </div>
+      
+      <div class="nextrow">
+          <label for="imgupload">Attach a photo of your product!</label>
+        <div class="col-70">
+          <input type="file">
+        </div>
+      </div>
+      
+      <br>
+      
+      <button style="margin-left: 10px;" type="button" onclick="submitButton()">Submit Now!</button>
+      
+      <script>
+        
+        function submitButton()
+        {
+          alert("Thank you for your feedback!")
+          location.reload()
+        }
+  
+      </script>
+    </div>
+  </form>
+  
 </div>
 
 <!--topbutton & sticky navbar-->

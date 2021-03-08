@@ -1,0 +1,25 @@
+h1
+{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.payLayout
+{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+	font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.paybackground
+{
+    border-radius: 5px;
+    background-color: gray;
+    padding: 30px;
+    margin: 0.2em;
+    height: 650px;
+}
