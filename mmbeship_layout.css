@@ -18,7 +18,7 @@ div{
     font-size: xx-large;
 }
 
-.signUp>input[type="text"]{
+.signUp>form>input[type="text"]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
