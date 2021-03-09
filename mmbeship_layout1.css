@@ -1,8 +1,16 @@
-h1{
-
-}
-.resForm{
-    text-align: center;
-    background-color: darkgray;
+div{
+    width: 40%;
     border-style: ridge;
+    border-radius: 15px;
+    border-width: 40%;
+    margin: auto;
+    margin-top: 30;
 }
+
+.resForm>input[type="text"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
