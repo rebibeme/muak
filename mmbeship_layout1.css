@@ -1,17 +1,35 @@
-div{
+.resForm{
     width: 40%;
     border-style: ridge;
     border-radius: 15px;
     border-width: 40%;
     margin: auto;
     margin-top: 30;
+    padding: 30px;
 }
 
-.resForm>input[type="text"]{
+.resForm>input[type="text"]
+{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+
+.resForm>input[type="submit"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #4CAF50;
+    opacity: 0.9;
+}
+
+.resForm>input[type="submit"]:hover
+{
+    opacity: 1;
 }
