@@ -28,7 +28,7 @@ div{
     box-sizing: border-box;
 }
 
-.signUp>a>input[type="submit"]{
+.signUp>input[type="submit"]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -39,7 +39,7 @@ div{
     opacity: 0.9;
 }
 
-.signUp>a>input[type="submit"]:hover
+.signUp>input[type="submit"]:hover
 {
     opacity: 1;
 }
