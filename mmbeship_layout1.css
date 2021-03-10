@@ -2,24 +2,18 @@ body{
     font-family: "Comic Sans MS";
 }
 
-div{
+.resForm{
     width: 40%;
     border-style: ridge;
     border-radius: 15px;
     border-width: 40%;
     margin: auto;
     margin-top: 30;
+    padding: 30px;
 }
 
-.signUp{
-    padding: 16px;
-}
-
-.signUp>h2{
-    font-size: xx-large;
-}
-
-.signUp>input[type="text"]{
+.resForm>input[type="text"]
+{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -28,7 +22,7 @@ div{
     box-sizing: border-box;
 }
 
-.signUp>a>input[type="submit"]{
+.resForm>input[type="submit"]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -39,7 +33,7 @@ div{
     opacity: 0.9;
 }
 
-.signUp>input[type="submit"]:hover
+.resForm>input[type="submit"]:hover
 {
     opacity: 1;
 }

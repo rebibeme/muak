@@ -8,9 +8,6 @@
 }
 
 /*faq button*/
-.faqbutton{
-	text-align: left;
-}
 .faqbutton a{
 	background-color:rgb(36, 35, 35);
   	border: none;
@@ -19,6 +16,7 @@
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 14px;
+	
 }	
 .faqbutton a:hover{
 	background-color: transparent;
@@ -29,14 +27,13 @@
 #faqpayment{
 	color:  rgb(68, 68, 68);
 }
-#faqpayment > p > a{
+#faqpayment p a{
 	color: blue;
 	text-decoration: none;
 }
 #faqreturn{
 	color:  rgb(68, 68, 68);
 }
-	
 #faqmembership{
 	color:  rgb(68, 68, 68);
 }

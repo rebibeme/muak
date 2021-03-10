@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+      <meta charset="UTF-8">
+      <title> SeekSeek SignUp </title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="layout.css">
+      <link rel="stylesheet" href="mmbeship_layout1.css">
+</head>
+
+<body>  
+  <header>
+    <section id="upper" class="navi">
+      <nav>
+        <ul>
+          <li><a href="mmbership.html">Sign Up</a></li>
+          <li><a href="login.html">Log in</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </nav>
+    </section>
+    <a href="homepage.html"><img src="banner.png" alt="SeekSeek Seasonal Store" class="center"/></a>
+
+  </header>
+
+    <form action="mmbership.php" method="POST">
+      <div class="resForm">
+
+        <h1>Membership Registeration</h1>
+
+        <label for="user">Username:</label><br>
+        <input type="text" id="user" name="user" placeholder="Enter Username" required><br>
+      
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter First Name" required><br>
+      
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required>
+      
+        <p>Gender :</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="Other">Other</label><br>
+      
+        <br><label for="phoneno">Phone Number:</label><br>
+        <input type="text" id="phoneno" name="phoneno" placeholder="Enter Phone Number" required><br>
+      
+        <label for="houseno">House Number:</label><br>
+        <input type="text" id="houseno" name="houseno" placeholder="Enter House Number"><br>
+      
+        <label for="email">Email-address:</label><br>
+        <input type="text" id="email" name="email" placeholder="Enter email" required><br>
+      
+        <label for="psword">Password:</label><br>
+        <input type="text" id="psword" name="psword" placeholder="Enter password" min=8 required><br>
+      
+        <label for="psword">Re-enter Password:</label><br>
+        <input type="text" id="rpsword" name="rpsword" placeholder="Re-enter password" min=8 required><br>
+      
+        <br><input type="submit" value="Submit">
+      </div>
+    </form>
+
+  <footer>
+    <hr style="width:97%">
+    <address>
+      &#x263A; 2077 SeekSeek. NO Rights Reserved<br>
+      SeekSeek &nbsp;&#x2606;&nbsp; 122b, ascent &nbsp;&#x2606;&nbsp; 04-123 456
+    </address>
+    
+ </footer>
+</body>
+</html>

@@ -2,7 +2,7 @@
 <html lang="en" style="scroll-behavior: smooth;">
 <head>
       <meta charset="UTF-8">
-      <title> SeekSeek </title>
+      <title> SeekSeek SignUp </title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="layout.css">
       <link rel="stylesheet" href="mmbeship_layout.css">
@@ -21,50 +21,18 @@
     </section>
     <a href="homepage.html"><img src="banner.png" alt="SeekSeek Seasonal Store" class="center"/></a>
 
-    <section id="lower" class="navi">
-      <nav>
-        <ul>
-          <li><a href="homepage.html">Home</a></li>
-          <li><a href="product.html">Product</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="feedback.html">Customer feedback</a></li>   
-       </ul>
-       </nav>
-    </section>
-  </header>
+    <form action="membership1.php" method="POST">
+      <div class="signUp">  
+        <h2>Sign Up</h2>
+        <p>Please fill the form to create an account</p><br>
+        <label for="phoneno">Phone Number *</label><br>
+        <input type="text" id="phoneno" name="phoneno" placeholder="Enter Phone Number " required><br>
+      
+        <a href="mmbership1.html"><input type="submit" value="Next"></a><br>
+      </div>
+    </form>
+  
 
-  <h1>
-    Membership Registeration
-  </h1>
-
-  <form action="/mmbership.html">
-    <label for="user">Username:</label><br>
-    <input type="text" id="user" name="user"><br>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname">
-
-    <p>Gender :</p>
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">Male</label><br>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Female</label><br>
-    <input type="radio" id="other" name="gender" value="Other">
-    <label for="Other">Other</label><br>
-
-    <br><label for="phoneno">Phone Number:</label><br>
-    <input type="text" id="phoneno" name="phoneno"><br>
-    <label for="houseno">House Number:</label><br>
-    <input type="text" id="houseno" name="houseno"><br>
-    <label for="email">Email-address:</label><br>
-    <input type="text" id="email" name="email"><br>
-    <label for="psword">Password:</label><br>
-    <input type="text" id="psword" name="psword"><br>
-
-    <br><input type="submit" value="Submit">
-  </form>
 
   <footer>
     <hr style="width:97%">

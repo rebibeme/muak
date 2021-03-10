@@ -1,42 +1,92 @@
 /*faq styles*/
 .faq{
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    min-width: 300px;
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 /*faq button*/
 .faqbutton a{
-  display: block;
   width: 150px;
-  padding: 10px ;
-  text-align: center;
+  padding: 10px;
   text-decoration: none;
   margin: auto;
   height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*faq container*/
 .faqbutton{
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 40px;
   border: none; 
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .faqbanner{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  background-color: black;
+  font-size: 4vw;
+  color: aliceblue;
   margin-top: 50px;
+  padding: 8%;
+  font-family: cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
 }
 
+/*dropdown menu*/
+.tqdropbtn {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.tqdropdown {
+  top: 350px;
+  position: absolute;
+  display: inline-block;
+}
+.tqdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+  z-index: 1;
+}
+.tqdropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  word-wrap: break-word;
+}
+.tqdropdown-content a:hover {
+  background-color: white;
+  color: black;
+}
+.tqdropdown:hover .tqdropdown-content {
+  display: block;
+}
+.tqdropdown:hover .tqdropbtn {
+  background-color: transparent;
+  color: black;
+}
 
-
-
+#topq1{
+  scroll-margin-top: 100px;
+}
+#topq2{
+  scroll-margin-top: 100px;
+}
+#topq3{
+  scroll-margin-top: 100px;
+}
 
