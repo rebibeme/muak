@@ -9,7 +9,7 @@ body{
     border-width: 40%;
     margin: auto;
     margin-top: 30;
-    padding: 30px;
+    padding: 70px;
 }
 
 .resForm>input[type="text"]
@@ -23,17 +23,29 @@ body{
 }
 
 .resForm>input[type="submit"]{
-    width: 100%;
+    width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
-    display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
     background-color: #4CAF50;
     opacity: 0.9;
+    float: right;
 }
 
-.resForm>input[type="submit"]:hover
+.resForm>input[type="reset"]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color:red;
+    opacity: 0.9;
+    float: left;
+}
+
+.resForm>input[type="submit"]:hover,
+.resForm>input[type="reset"]:hover
 {
     opacity: 1;
 }
