@@ -85,3 +85,72 @@
     color: black;
   }
     
+
+  table.programs {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+    border: 15px outset #567572FF;
+    border-collapse: collapse;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+ }
+ thead tr,
+ tbody tr{
+    height: 70px;
+ }
+ table th,
+ table td{
+    border: 1px solid black;
+    vertical-align: top;
+    padding: 5px;
+ }
+ /* Table Caption Styles */
+ table caption{
+    caption-side: top;
+ }
+ 
+ thead th,
+ tbody th, 
+ tbody td{
+  vertical-align: middle;
+ }
+ 
+ /* Table Column Styles */
+ .timeColumn {
+    width: 12%;
+    background-color: rgb(90, 142, 172);
+ }
+ .wDayColumn {
+    width: 11%;
+    background-color: rgb(230, 214, 193);
+ }
+ .wEndColumn {
+    width: 16.5%;
+    background-color: rgb(228, 130, 130);
+ }
+ 
+ /* Table Header Styles */
+ table thead TH:first-of-type{
+  background-color:rgb(29, 94, 131);
+  color: white;
+}
+ table thead th{
+    background-color:rgb(228, 193, 148);
+ }
+
+ table thead th:nth-child(7),
+ table thead th:nth-child(8){
+    background-color: rgb(224, 94, 94);
+ }
+ 
+ /* Table Footer Styles */
+ tfoot{
+    background-color: #233067;
+    color: white;
+ }
+ tfoot tr{
+   height: 15px;
+ }
