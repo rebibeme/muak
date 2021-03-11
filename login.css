@@ -1,5 +1,23 @@
-.div>input[type="text"]{
-  width: 100%;
+body{
+  font-family: "Comic Sans MS";
+}
+
+div{
+  padding: 16px;
+}
+
+div{
+  width: 40%;
+  border-style: ridge;
+  border-radius: 15px;
+  border-width: 40%;
+  margin: auto;
+  margin-top: 30;
+}
+
+.div>input[type="submit"]
+{
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -7,4 +25,14 @@
     box-sizing: border-box;
     background-color: #4CAF50;
     opacity: 0.9;
+}
+
+.div>input[type="text"]
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
