@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <title> SeekSeek </title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="layout.css">
-      <link rel="stylesheet" href="login.css">
-</head>
+  <head>
+        <meta charset="UTF-8">
+        <title> SeekSeek </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="login.css">
+  </head>
 
-<body>  
-  <header>
-    <section id="upper" class="navi">
-      <nav>
-        <ul>
-          <li><a href="mmbership.html">Sign Up</a></li>
-          <li><a href="login.html">Log in</a></li>
-          <li><a href="cart.html">Cart</a></li>
-        </ul>
-      </nav>
-    </section>
-    <a href="homepage.html"><img src="banner.png" alt="SeekSeek Seasonal Store" class="center"/></a>
+  <body>  
+    <header>
+      <section id="upper" class="navi">
+        <nav>
+          <ul>
+            <li><a href="mmbership.html">Sign Up</a></li>
+            <li><a href="login.html">Log in</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+       </nav>
+      </section>
+      <a href="homepage.html"><img src="banner.png" alt="SeekSeek Seasonal Store" class="center"/></a>
 
-  </header> <section id="lower" class="navi">
+    </header> <section id="lower" class="navi">
    
 
-  <div>
-    <h1>
-      Login
-    </h1>
+    <div>
+      <h1>
+        Login
+      </h1>
   
-    <form>
-      <label for="user">Username:</label><br>
-      <input type="text" id="user" name="user" placeholder="Enter Username" required/><br>
-      <label for="psword">Password:</label><br>
-      <input type="text" id="psword" name="psword" placeholder="Enter Password" minlength="8" required/>
+      <form>
+        <label for="user">Username:</label><br>
+        <input type="text" id="user" name="user" placeholder="Enter Username" required/><br>
+        <label for="psword">Password:</label><br>
+        <input type="password" id="psword" name="psword" placeholder="Enter Password" minlength="8" required/>
 
-      <input type="checkbox" onclick="myFunction()">Show Password
-      <script>
-        function myFunction() {
-        var x = document.getElementById("psword");
-        if (x.type === "password") 
-        {
-        x.type = "text";
-        }
-         else
-        {
-        x.type = "password";
-        }
-      </script>
+        <input type="checkbox" onclick="myFunction()">Show Password
+        <script>
+          function myFunction() {
+          var x = document.getElementById("psword");
+          if (x.type === "password") 
+          {
+          x.type = "text";
+          }
+          else
+          {
+          x.type = "password";
+          }
+          }
+        </script>
 
-      <input type="checkbox" id="chkbox" name="chkbox" value="Remember Me">
-      <label for="rmbeme">Remember Me</label>
-      <br><input type="submit" value="Login">
+        <input type="checkbox" id="chkbox" name="chkbox" value="Remember Me">
+        <label for="rmbeme">Remember Me</label>
+        <br><input type="submit" value="Login">
 
-    </form>
-  </div>
+      </form>
+    </div>
 
-  <footer>
-    <hr style="width:97%">
-    <address>
-      &#x263A; 2077 SeekSeek. NO Rights Reserved<br>
-      SeekSeek &nbsp;&#x2606;&nbsp; 122b, ascent &nbsp;&#x2606;&nbsp; 04-123 456
-    </address>
+    <footer>
+      <hr style="width:97%">
+      <address>
+        &#x263A; 2077 SeekSeek. NO Rights Reserved<br>
+        SeekSeek &nbsp;&#x2606;&nbsp; 122b, ascent &nbsp;&#x2606;&nbsp; 04-123 456
+      </address>
     
- </footer>
-</body>
+    </footer>
+  </body>
 </html>
