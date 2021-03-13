@@ -19,7 +19,7 @@ div{
     font-size: xx-large;
 }
 
-.signUp>input[type="text"]{
+.signUp>input[type="tel"]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
