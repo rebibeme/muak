@@ -8,10 +8,11 @@
 	width: 30%;
 }
 
-img{
+fieldset>img{
 	float: left;
 	width: 150px;
 	height: 150px;
+	border-radius: 8px;
 }
 
 .i_list>h1{
