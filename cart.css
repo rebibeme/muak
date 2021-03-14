@@ -9,8 +9,19 @@ h1{
     padding: 35px;
 }
 
-#div_left>.i_list>.inde_button{
-	align-items:"center";
+#div_left>.i_list>.inde_button>.minus_decrease,.plus_increase{
+	position: relative;  /*flexible the position*/
+	bottom: 20px;
+	left: 50px;
+	padding: 14px 14px;
+}
+
+#div_left>.i_list>.inde_button>.quantity{
+	position: relative;
+	padding: 8px;
+	left:50px;
+	bottom:16px;
+	width: 75px;
 }
 
 #div_left>.i_list>img{
@@ -20,17 +31,16 @@ h1{
 	border-radius: 8px;
 }
 
-#div_left>.i_list>.inde_button{
-	margin-bottom: auto;
-	float: right;
-}
-
 #div_left>.i_list>.movnremove{
-	float:right;
+	position: relative;
+	top: 120px; /*position from top to bottom*/
+	left: 70px;
 }
 
 #div_left>.i_list>h2{
-	float: right;
+	position: relative;
+	left: 30px;
+	bottom: 20px;
 }
 
 #div_left>.i_list{
