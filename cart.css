@@ -9,7 +9,11 @@ h1{
     padding: 35px;
 }
 
-#div_left>.i_list>p{
+.i_list{
+	background-color:#E8E8E8;
+}
+
+#div_left>.i_list>#qty{
 	position: relative;
 	left:50px;
 	top:30px;
@@ -42,6 +46,11 @@ h1{
 	position: relative;
 	top: 60px; /*position from top to bottom*/
 	left: 50px;
+}
+
+#div_left>.i_list>#ttl{
+	position: relative;
+	left: 80px;
 }
 
 #div_left>.i_list>h2{
