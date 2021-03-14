@@ -13,6 +13,7 @@ h1{
 	position: relative;
 	left:50px;
 	top:30px;
+	font-size: 18px;
 }
 
 #div_left>.i_list>.inde_button>.minus_decrease,.plus_increase{
