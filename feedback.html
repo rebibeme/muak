@@ -8,6 +8,45 @@
       <link rel="stylesheet" href="feedbackStyles.css">
 </head>
 
+<script>
+  var no_slides = 0;
+showSlides();
+
+function plusSlides(n) {
+  showSlides(no_slides += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slideimg");
+  var dots = document.getElementsByClassName("dot");
+
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";  
+  }
+
+  if (no_slides > slides.length) 
+  {
+    no_slides = 1;
+  } 
+
+  if (no_slides < 1) 
+  {
+    no_slides = slides.length;
+  } 
+
+  for (i = 0; i < dots.length; i++) 
+  {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[no_slides-1].style.display = "block";  
+  dots[no_slides-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 5 seconds
+}
+</script>
+
 <body>  
   <header>
     <section id="upper" class="navi">
@@ -46,22 +85,22 @@
     
   <p style="text-align: center;">Here's some of our customers' feedbacks!</p>
 
-  <!-- Full-width images with number and caption text -->
-  <div class="slidefade">
 
-    <img src="sample_review1.jpg" style="width:100%">
+  <div>
 
-  </div>
-
-  <div class="slidefade">
-
-    <img src="sample_review2.jpg" style="width:100%">
+    <img class="slideimg fade" src="sample_review1.jpg" style="width:100%">
 
   </div>
 
-  <div class="slidefade">
+  <div>
 
-    <img src="sample_review3.jpg" style="width:100%">
+    <img class="slideimg fade" src="sample_review2.jpg" style="width:100%">
+
+  </div>
+
+  <div>
+
+    <img class="slideimg fade" src="sample_review3.jpg" style="width:100%">
 
   </div>
 
@@ -72,8 +111,8 @@
 
 </div>
 
+<!--dots-->
 <div style="text-align:center">
-  <span class="dot"></span> 
   <span class="dot"></span> 
   <span class="dot"></span> 
   <span class="dot"></span> 
