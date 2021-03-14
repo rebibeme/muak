@@ -1,3 +1,21 @@
-img{
-	border-radius: 20px;
+#div_left>.i_list>img{
+	float: left;
+	width: 150px;
+	height: 230px;
+	border-radius: 8px;
+}
+
+#div_left>.i_list>h2{
+	float: right;
+}
+
+#div_left>.i_list{
+	margin: auto;
+	padding: 35px;
+	width: 60%;
+	border-radius: 5px;
+}
+
+#div_right>fieldset{
+	border-radius: 5px;
 }

@@ -5,7 +5,7 @@
       <title> SeekSeek SignUp </title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="layout.css">
-      <link rel="stylesheet" href="cart_css">
+      <link rel="stylesheet" href="cart.css">
 </head>
 
 <body>  
@@ -34,9 +34,15 @@
          </nav>
       </section>
   
+    <div>
+      <h1>
+        Cart
+      </h1>
+    </div>
     <div id="div_left">
+      <fieldset class="i_list">
         <img src="products/cny/popcorncaramel.png" alt="Caramel Popcorn" class="i_cart">
-        <h1>Caramel Popcorn</h1>
+        <h2>Caramel Popcorn</h1>
         <div class="def-number-input number-input safari_only mb-0 w-100">
           <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
             class="minus decrease"></button>
@@ -52,10 +58,13 @@
             <a href="#!" type="button" class="card-link-secondary small text-uppercase"><i
                 class="fas fa-heart mr-1"></i> Move to wish list </a>
           </div>
+        </fieldset>
     </div>
 
     <div id="div_right">
-     
+      <fieldset>
+        <h3>Amount</h2>
+      </fieldset>
     </div>
 
   
