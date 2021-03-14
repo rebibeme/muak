@@ -13,7 +13,7 @@ h1{
 	background-color:#E8E8E8;
 }
 
-#div_left>.i_list>#qty{
+#div_left>.i_list>p#qty{
 	position: relative;
 	left:50px;
 	top:30px;
@@ -48,9 +48,9 @@ h1{
 	left: 50px;
 }
 
-#div_left>.i_list>#ttl{
+#div_left>.i_list>div>p{
 	position: relative;
-	left: 80px;
+	left: 1200px;
 }
 
 #div_left>.i_list>h2{
@@ -71,4 +71,5 @@ h1{
 	width: 55%;
 	margin: auto;
 	padding: 35px;
+	background-color: #E8E8E8;
 }
