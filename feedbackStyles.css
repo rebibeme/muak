@@ -18,6 +18,25 @@ h1
 	font-family:  Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.slideimg
+{
+    display: none;
+}
+
+.slideimg:first-child
+{
+    display: block;
+}
+
+.fade
+{
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
 .prev, .next 
 {
     cursor: pointer;
@@ -42,7 +61,7 @@ h1
 
 .prev:hover, .next:hover 
 {
-    background-color: white;
+    background-color: gray;
     color: black;
 }
 
@@ -62,16 +81,8 @@ h1
     background-color: gray;
 }
 
-.slidefade 
+@keyframes fadeInOpacity 
 {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 1s;
-}
-
-@keyframes fadeInOpacity {
 	0% {
 		opacity: 0;
 	}
