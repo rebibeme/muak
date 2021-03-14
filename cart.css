@@ -9,18 +9,24 @@ h1{
     padding: 35px;
 }
 
+#div_left>.i_list>p{
+	position: relative;
+	left:50px;
+	top:30px;
+}
+
 #div_left>.i_list>.inde_button>.minus_decrease,.plus_increase{
 	position: relative;  /*flexible the position*/
-	bottom: 20px;
+	top:40px;
 	left: 50px;
-	padding: 14px 14px;
+	padding: 8px 14px;
 }
 
 #div_left>.i_list>.inde_button>.quantity{
 	position: relative;
 	padding: 8px;
 	left:50px;
-	bottom:16px;
+	top:40px;
 	width: 75px;
 }
 
@@ -33,8 +39,8 @@ h1{
 
 #div_left>.i_list>.movnremove{
 	position: relative;
-	top: 120px; /*position from top to bottom*/
-	left: 70px;
+	top: 60px; /*position from top to bottom*/
+	left: 50px;
 }
 
 #div_left>.i_list>h2{
