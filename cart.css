@@ -9,6 +9,10 @@ h1{
     padding: 35px;
 }
 
+#div_left>.i_list>.inde_button{
+	align-items:"center";
+}
+
 #div_left>.i_list>img{
 	float: left;
 	width: 150px;
@@ -17,7 +21,7 @@ h1{
 }
 
 #div_left>.i_list>h2{
-	float: right;
+	float: center;
 }
 
 #div_left>.i_list{
