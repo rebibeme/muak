@@ -27,7 +27,7 @@ h1{
 	padding: 8px 14px;
 }
 
-#div_left>.i_list>.inde_button>.quantity{
+#div_left>.i_list>.inde_button>#q_prod{
 	position: relative;
 	padding: 8px;
 	left:50px;
@@ -48,7 +48,7 @@ h1{
 	left: 50px;
 }
 
-#div_left>.i_list>div>p{
+#div_left>.i_list>div>#ttl{
 	position: relative;
 	left: 1200px;
 }

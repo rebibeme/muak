@@ -48,7 +48,7 @@
         <div class="inde_button">
           <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
             class="minus_decrease"><b>-</b></button>
-          <input class="quantity" min="0" name="quantity" value="1" type="number">
+          <input id="q_prod" min="0" name="quantity" value="1" type="number">
           <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
             class="plus_increase" ><b>+</b></button>
         </div>
@@ -62,11 +62,21 @@
         </div>
 
         <div>
-          <p><b>Total :</b></p>
+          <p id="ttl"><b>Total :</b></p>
+          <p class="pop">RM <output id="poptotal"></output></p>
         </div>
-        
 
+        <script>
+          var itemquantity, popamount, poptotalamount,  gtotalprod, gtotalprods
         
+          function pop() {
+            var itemquantity = document.getElementById("q_prod").value;
+            var popamount = document.getElementById("poptotal");
+            var poptotalamount = itemquantity.value * 18.90;
+            popamount.value = poptotalamount;
+          }
+
+        </script>
         
       </fieldset>
     </div>
