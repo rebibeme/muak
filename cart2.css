@@ -2,9 +2,9 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-* {
+div {
     margin: 30px;
-    padding: 20;
+    padding: 20px;
 }
 i {
     margin-right: 10px;
