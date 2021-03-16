@@ -108,10 +108,10 @@ h1
     height: 650px;
 }
 
-.nextrow:after 
+.nextrow
 {
     content: "";
-    display: table;
+    display: block;
     clear: both;
 }
 
@@ -168,5 +168,6 @@ button
 
 button:hover
 {
+    background-color: cyan;
     opacity: 1.0;
 }

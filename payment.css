@@ -1,25 +1,86 @@
 h1
 {
     font-family:  Verdana, Geneva, Tahoma, sans-serif;
-    display: block;
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
 }
 
-.payLayout
+/* display everything in a row*/
+
+.row 
 {
-    max-width: 1000px;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+/* defines layout */
+
+.pay-Layout
+{
+    display: flex;
     margin-left: auto;
     margin-right: auto;
 	font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%;
 }
 
-.paybackground
+/* the plan to set 60% for cust info, payment details, 40% for cart */
+
+.col-60
+{
+    -ms-flex: 60%;
+    flex: 60%;
+}
+
+.col-40
+{
+    -ms-flex: 40%;
+    flex: 40%;
+}
+
+/* 50% of the col-60 */
+
+.col-50
+{
+    -ms-flex: 50%;
+    flex: 50%;
+
+}
+
+/* set padding for each cols*/
+
+.col-40,
+.col-50,
+.col-60
+{
+    padding: 0 10px;
+}
+
+.pay-container
 {
     border-radius: 5px;
     background-color: gray;
     padding: 30px;
     margin: 0.2em;
     height: 650px;
+}
+
+label
+{
+    padding: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+input[type=text],
+input[type=email]
+{
+    margin-left: 10px;
+    height: 30px;
+    width: 100%;
+    margin-top: 6px;
 }
