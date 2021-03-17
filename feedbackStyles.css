@@ -10,25 +10,16 @@ h1
     font-weight: bold;
 }
 
-.slidecontainer 
+.slideshow-container 
 {
-    max-width: 50%;
+    width: 900px;
+    max-width: 100%;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
-	font-family:  Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.slideimg
-{
-    display: none;
-}
-
-.slideimg:first-child
-{
-    display: block;
-}
-
-.fade
+.ActiveSlide
 {
 	opacity: 1;
 	animation-name: fadeInOpacity;
@@ -37,33 +28,32 @@ h1
 	animation-duration: 1s;
 }
 
-.prev, .next 
-{
+.prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 52%;
     width: auto;
-    margin-top: -22px;
     padding: 16px;
+    margin-top: -22px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 10px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-}
-
-.next 
-{
-    right: 25%;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
     border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover 
-{
-    background-color: gray;
+  }
+  
+  /* On hover, add a grey background color */
+  .prev:hover, .next:hover {
+    background-color: #f1f1f1;
     color: black;
-}
+  }
 
 .dot 
 {
@@ -105,7 +95,7 @@ h1
     background-color: gray;
     padding: 30px;
     margin: 0.2em;
-    height: 650px;
+    height: 550px;
 }
 
 .nextrow
@@ -154,7 +144,7 @@ textarea
     resize: vertical;
 }
 
-button
+.submitbtn
 {
     width: 20;
     padding: 12px 20px;
@@ -166,7 +156,7 @@ button
     opacity: 0.9;
 }
 
-button:hover
+.submitbtn:hover
 {
     background-color: cyan;
     opacity: 1.0;

@@ -8,44 +8,8 @@
       <link rel="stylesheet" href="feedbackStyles.css">
 </head>
 
-<script>
-  var no_slides = 0;
-showSlides();
-
-function plusSlides(n) {
-  showSlides(no_slides += n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slideimg");
-  var dots = document.getElementsByClassName("dot");
-
-  for (i = 0; i < slides.length; i++) 
-  {
-      slides[i].style.display = "none";  
-  }
-
-  if (no_slides > slides.length) 
-  {
-    no_slides = 1;
-  } 
-
-  if (no_slides < 1) 
-  {
-    no_slides = slides.length;
-  } 
-
-  for (i = 0; i < dots.length; i++) 
-  {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-
-  slides[no_slides-1].style.display = "block";  
-  dots[no_slides-1].className += " active";
-  setTimeout(showSlides, 4000); // Change image every 5 seconds
-}
-</script>
+<!--automatic & control slideshow-->
+<script src="slide.js"></script>
 
 <body>  
   <header>
@@ -90,37 +54,33 @@ function showSlides(n) {
 <hr style="width: 97%">
 
     <!-- Slideshow container -->
-<div class="slidecontainer">
 
   <h1 style="text-align: center;">Customer Feedback</h1>
     
   <p style="text-align: center;">Here's some of our customers' feedbacks!</p>
 
 
-  <div>
+  <div class="slideshow-container">
+    
+    <div class="ActiveSlide">
+      <img src="sample_review1.jpg" style="width:100%; height: 550px;"  >
+    </div>
 
-    <img class="slideimg fade" src="sample_review1.jpg" style="width:100%">
+    <div class="ActiveSlide">
+      <img src="sample_review2.jpg" style="width:100%; height: 550px;">
+    </div>
+
+    <div class="ActiveSlide">
+      <img src="sample_review3.jpg" style="width:100%; height: 550px;">
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
 
   </div>
 
-  <div>
-
-    <img class="slideimg fade" src="sample_review2.jpg" style="width:100%">
-
-  </div>
-
-  <div>
-
-    <img class="slideimg fade" src="sample_review3.jpg" style="width:100%">
-
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-
-</div>
 
 <!--dots-->
 <div style="text-align:center">
@@ -191,7 +151,7 @@ function showSlides(n) {
       
       <br>
       <div class="nextrow">
-        <button style="margin-left: 10px;" type="button" onclick="submitButton()">Submit Now!</button>
+        <button style="margin-left: 10px;" type="button" class="submitbtn" onclick="submitButton()">Submit Now!</button>
       </div>
       <script>
         
@@ -235,5 +195,8 @@ function showSlides(n) {
     </address>
     
  </footer>
+
+ <script src="slide.js"></script>
+
 </body>
 </html>
