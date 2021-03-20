@@ -1,59 +1,79 @@
 <!DOCTYPE html>
 <html lang="en" style="scroll-behavior: smooth;">
-<head>
-      <meta charset="UTF-8">
-      <title> SeekSeek SignUp </title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="layout.css">
-      <link rel="stylesheet" href="mmbeship_layout.css">
-</head>
+  <head>
+        <meta charset="UTF-8">
+        <title> SeekSeek SignUp </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="mmbeship_layout.css">
+  </head>
 
-<body>  
-  <header>
-    <section id="upper" class="navi">
-      <nav>
-        <ul>
+  <body>  
+     <header>
+       <section id="upper" class="navi">
+         <nav>
+           <ul>
           <li><a href="mmbership.html">Sign Up</a></li>
           <li><a href="login.html">Log in</a></li>
-          <li><a href="cart.html">Cart</a></li>
-        </ul>
-      </nav>
-    </section>
-    <a href="homepage.html"><img src="banner.png" alt="SeekSeek Seasonal Store" class="center"/></a>
+          <li><a href="cart2.html">Cart</a></li>
+           </ul>
+         </nav>
+       </section>
+       <a href="homepage.html"><img src="banner.png" alt="SeekSeek Seasonal Store" class="center"/></a>  
 
-    <section id="lower" class="navi">
-      <nav>
-        <ul>
-          <li><a href="homepage.html">Home</a></li>
-          <li><a href="product.html">Product</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="payment.html">Payment</a></li>
-          <li><a href="feedback.html">Customer feedback</a></li>   
-       </ul>
-       </nav>
-    </section>
+       <section id="lower" class="navi">
+         <nav>
+           <ul>
+             <li><a href="homepage.html">Home</a></li>
+             <li><a href="product.html">Product</a></li>
+             <li><a href="aboutus.html">About Us</a></li>
+             <li><a href="faq.html">FAQ</a></li>
+             <li><a href="payment.html">Payment</a></li>
+             <li><a href="feedback.html">Customer feedback</a></li>   
+          </ul>
+          </nav>
+       </section>  
 
-    <form action="mmbership1.html">
-      <div class="signUp">  
-        <h2>Sign Up</h2>
-        <p>Please fill the form to create an account</p><br>
-        <label for="phoneno">Phone Number *</label><br>
-        <input type="tel" id="phoneno" name="phoneno" placeholder="Enter Phone Number " required/><br>
+       <form action="mmbership1.html">
+         <div class="signUp">  
+           <h2>Sign Up</h2>
+           <p>Please fill the form to create an account</p><br>
+           <label for="phoneno">Phone Number *</label><br>
+           <input type="tel" id="phoneno" name="phoneno" placeholder="Enter Phone Number " required/><br>
+          
+           <input type="submit" value="Next"/><br>
+         </div>
+       </form>
       
-        <input type="submit" value="Next"/><br>
-      </div>
-    </form>
-  
 
 
-  <footer>
-    <hr style="width:97%">
-    <address>
-      &#x263A; 2077 SeekSeek. NO Rights Reserved<br>
-      SeekSeek &nbsp;&#x2606;&nbsp; 122b, ascent &nbsp;&#x2606;&nbsp; 04-123 456
-    </address>
-    
- </footer>
-</body>
+     <footer>
+       <hr style="width:97%">
+       <address>
+         &#x263A; 2077 SeekSeek. NO Rights Reserved<br>
+         SeekSeek &nbsp;&#x2606;&nbsp; 122b, ascent &nbsp;&#x2606;&nbsp; 04-123 456
+       </address>  
+
+    </footer>
+    <!--chatbot-->
+    <script src="chatbot.js"></script>
+    <button id="chatbtn" class="open-button" onclick="chatbot()"><img src="walle.png" alt="chatbot"></button>
+      <div class="popupchatbox" id="mainchatbox">
+        <form action="/action_page.php" class="chatbox">
+          <button type="button" class="closebtn" onclick="closebot()">&#10006;</button>
+          <input type="text" placeholder="Enter message" name="message" required>
+          <button type="submit" class="sendbtn">Send</button>
+          <div class="chatmessage">
+            <img src="kanyewest.jpg" alt="botkanye" style="width:100%;">
+            <p>Hi, I am botKanye. How may I help you?</p>
+            <span class="botkanyetime">11:00</span>
+          </div>
+        </form>
+      </div> 
+
+    <!--sticky navbar and top button-->
+    <button onclick="topFunction()" id="topbtn" title="Go to top">&#8896;<br>TOP</button>
+    <script src="navbarandtopbutton.js"></script>
+    <!--sticky navbar and top button-->
+  </body>
 </html>
