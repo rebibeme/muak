@@ -25,7 +25,7 @@ h1
     margin-left: auto;
     margin-right: auto;
 	font-family:  Verdana, Geneva, Tahoma, sans-serif;
-    width: 80%;
+    width: 45%;
 }
 
 /* the plan to set 60% for cust info, payment details, 40% for cart */
@@ -77,10 +77,16 @@ label
 }
 
 input[type=text],
-input[type=email]
+input[type=email],
+select
 {
     margin-left: 10px;
     height: 30px;
-    width: 100%;
+    width: 300px;
     margin-top: 6px;
+}
+
+#postcode
+{
+    width: 100px;
 }
