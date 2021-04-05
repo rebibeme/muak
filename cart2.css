@@ -13,12 +13,6 @@ i {
     margin-right: 10px;
 }
 
-img{
-	width: 120px;
-    height: 120px;
-	border-radius: 5px;
-	
-}
 input:focus,
 button:focus,
 .form-control:focus{
@@ -59,14 +53,11 @@ button:focus,
     background-color: #5161ce;
     color: #fff;
 }
-.img-prdct{
-    width: 50px;
-    height: 50px;
-    background-color: #5161ce;
-    border-radius: 4px;
-}
+
 .img-prdct img{
-    width: 100%;
+    width:  150px;
+    height: 170px;
+    border-radius: 4px;
 }
 thead tr{
     background-color: #343A40;
