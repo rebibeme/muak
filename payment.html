@@ -2,6 +2,7 @@
 <html lang="en" style="scroll-behavior: smooth;">
 <head>
       <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <title> SeekSeek </title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="layout.css">
@@ -55,67 +56,77 @@
   <div class="col-60">
     <div class="pay-container">
       <div class="row">
-      <div class="col-50">
+        <div class="col-50">
   
-        <h1>Customer Info</h1> <br>
+          <h1>Customer Info</h1> <br>
+    
+          <label for="fname">Full Name:</label>
+          <input type="text" id="fname" name="fullname" placeholder="Ricardo Milos">
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="mynamejeff@gmail.com">
+    
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" placeholder="">
+          <input type="text" id="address" name="address" placeholder="">
+    
+          <label for="city">City:</label>
+          <select style="width:200px;">
+            <option value="0">Choose City:</option>
+            <option value="1">Petaling Jaya</option>
+            <option value="2">Cyberjaya</option>
+            <option value="3">Ampang</option>
+            <option value="4">Limbang</option>
+            <option value="5">Miri</option>
+          </select>
+          
+          <label for="postcode">Postcode:</label>
+          <input type="text" id="postcode" name="postcode" placeholder="Eg. 98700">
   
-        <label for="fname">Full Name:</label>
-        <input type="text" id="fname" name="fullname" placeholder="Ricardo Milos">
+          <label for="state">State:</label>
+          <select style="width:200px;">
+            <option value="0">Choose State:</option>
+            <option value="1">Kuala Lumpur</option>
+            <option value="2">Selangor</option>
+            <option value="3">Johor</option>
+            <option value="4">Melaka</option>
+            <option value="5">Sarawak</option>
+          </select>
   
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="mynamejeff@gmail.com">
-  
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address" placeholder="">
-        <input type="text" id="address" name="address" placeholder="">
-  
-        <label for="city">City:</label>
-        <select style="width:200px;">
-          <option value="0">Choose City:</option>
-          <option value="1">Petaling Jaya</option>
-          <option value="2">Cyberjaya</option>
-          <option value="3">Ampang</option>
-          <option value="4">Limbang</option>
-          <option value="5">Miri</option>
-        </select>
-        
-        <label for="postcode">Postcode:</label>
-        <input type="text" id="postcode" name="postcode" placeholder="Eg. 98700">
-
-        <label for="state">State:</label>
-        <select style="width:200px;">
-          <option value="0">Choose State:</option>
-          <option value="1">Kuala Lumpur</option>
-          <option value="2">Selangor</option>
-          <option value="3">Johor</option>
-          <option value="4">Melaka</option>
-          <option value="5">Sarawak</option>
-        </select>
-  
-      </div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="col-40">
-
     <div class="pay-container">
-      
       <div class="row">
         <div class="col-50">
-    
+
           <h1>Payment Method</h1> <br>
           
-          
-          
-    
-        </div>
-        </div>
+          <label for="cards">Select card type:</label>
+          <input type="radio" id="cards1" name="paycards" checked>
+          <i class="fa fa-cc-visa" style="color:black; font-size: 36px;"></i>
+          <input type="radio" id="cards2" name="paycards">
+          <i class="fa fa-cc-mastercard" style="color:black; font-size: 36px;"></i>
 
+          <label for="fname">Cardholder Name:</label>
+          <input type="text" id="fname" name="fullname" placeholder="Ricardo Milos" style="width: 80%;">
+          
+          <label for="crednum">Card Number:</label>
+          <input type="text" id="crednum" name="ccardnum" placeholder="Eg. 1234-5678-6942-0123" style="width: 80%;">
+
+          <label for="exp">Expiry Month & Year:</label>
+          <input type="text" id="exp" name="expdate" placeholder="Eg. 08/26" style="width: 40%;">
+
+          <label for="cvvnum">CVV:</label>
+          <input type="text" id="cvvnum" name="cvv" placeholder="Eg. 833" style="width: 40%;">
+
+        </div>
+      </div>
     </div>
-
   </div>
-
 </div>
 </div>
   <!--topbutton & sticky navbar-->
