@@ -40,3 +40,60 @@
 #faqshipping{
 	color:  rgb(68, 68, 68);
 }
+
+
+ /* Keyframe Styles */
+ @keyframes scroll{
+	0% {top: 300px;}
+	100% {top: -600px;}
+ }
+ 
+ /* Animation Styles */
+ div#faqlist table{
+	position: absolute;
+	animation-name: scroll;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+ }
+ div#faqlist table:hover{
+	animation-play-state: paused;
+ }
+
+ div#faqlist {
+	background-color: transparent;   
+	height: 300px;
+	width: 300px;
+	overflow:hidden;
+	border: rgb(0, 0, 0) 10px solid;
+	margin: 0px 5px;
+	top: 450px;
+	position: absolute;
+ }
+
+ div#faqlist a:link{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: black;
+	text-decoration: none;
+ }
+
+ div#faqlist a:hover{
+	color: black;
+	text-decoration: underline;
+ }
+ div#faqlist a:visited{
+	color: rgb(58, 58, 58);
+	text-decoration: none;
+ }
+
+ @media only screen and (max-width: 1300px) {
+	div#faqlist{
+		display: none;
+	}
+  }
+  @media only screen and (max-width: 1100px) {
+	div.tqdropdown{
+		display: none;
+	}
+  }
