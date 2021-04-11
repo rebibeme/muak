@@ -60,7 +60,7 @@
 	animation-play-state: paused;
  }
 
- div#faqlist {
+div#faqlist {
 	background-color: transparent;   
 	height: 300px;
 	width: 300px;
@@ -69,8 +69,8 @@
 	margin: 0px 5px;
 	top: 450px;
 	position: absolute;
+	line-height: 1.5em;
  }
-
  div#faqlist a:link{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 17px;
@@ -86,6 +86,8 @@
 	color: rgb(58, 58, 58);
 	text-decoration: none;
  }
+
+
 
  @media only screen and (max-width: 1300px) {
 	div#faqlist{
