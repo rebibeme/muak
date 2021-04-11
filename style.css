@@ -29,7 +29,19 @@
 	color: #222;
     background-color: black;
 }
-
+.navi nav ul li ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 8px 50px 8px 10px;
+	background-color: #152238;
+}
+.navi nav ul li ul li a:hover{
+    color: black;
+	background-color: white;
+}
 /*structural styles*/
 address{
 	font-style: normal;

@@ -26,6 +26,20 @@
 	display: block;
 	text-align: center;
 }
+.navi nav ul li ul{
+	visibility: hidden;
+    transition:opacity 0.2s linear, visibility 0.2s linear;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	opacity:0;
+    position: absolute;
+	z-index: 99999;
+}
+.navi nav ul li:hover ul{
+	visibility: visible;
+	opacity: 1;
+}
 
 /*photo center*/
 .center{
