@@ -11,7 +11,7 @@
 .faqbutton a{
 	background-color:rgb(36, 35, 35);
   	border: none;
-  	color: white;
+  	color: #82a8ce;
 	font-family: Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -77,16 +77,18 @@ div#faqlist {
 	color: black;
 	text-decoration: none;
  }
-
  div#faqlist a:hover{
-	color: black;
+	color: #82a8ce;
 	text-decoration: underline;
  }
  div#faqlist a:visited{
 	color: rgb(58, 58, 58);
 	text-decoration: none;
  }
-
+ div#faqlist a:visited:hover{
+	color: #82a8ce;
+	text-decoration: none;
+ }
 
 
  @media only screen and (max-width: 1300px) {
