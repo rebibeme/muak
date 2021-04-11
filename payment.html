@@ -128,12 +128,25 @@
           <label for="crednum">Card Number:</label>
           <input type="text" id="crednum" name="ccardnum" placeholder="Eg. 1234-5678-6942-0123" style="width: 80%;">
 
-          <label for="exp">Expiry Month & Year:</label>
-          <input type="text" id="exp" name="expdate" placeholder="Eg. 08/26" style="width: 40%;">
+          <label for="exp">Expiry Date:</label>
+          <input type="text" id="exp" name="expdate" placeholder="Eg. 08/26" style="min-width: 25%; max-width: 30%;">
 
           <label for="cvvnum">CVV:</label>
-          <input type="text" id="cvvnum" name="cvv" placeholder="Eg. 833" style="width: 40%;">
+          <input type="text" id="cvvnum" name="cvv" placeholder="Eg. 833" style="min-width: 25%; max-width: 30%">
+          
+          <br> <br>
 
+          <button style="margin-left: 10px;" type="button" class="submitbtn" onclick="submitButton()">Submit Now!</button>
+          
+          <script>
+        
+            function submitButton()
+            {
+              alert("Thank you for your feedback!")
+              location.reload()
+            }
+      
+          </script>
         </div>
       </div>
     </div>
