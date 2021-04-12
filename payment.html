@@ -49,7 +49,12 @@
               <li><a href="christmasproduct.html">Christmas</a></li>
             </ul>
           </li>
-          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="aboutus.html">About Us</a>
+            <ul>
+              <li><a href="aboutus.html">Company Info</a></li>
+              <li><a href="location.html">Locations</a></li>
+            </ul>
+          </li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="payment.html">Payment</a></li>
           <li><a href="feedback.html">Customer feedback</a></li>   
@@ -118,31 +123,30 @@
           
           <label for="cards">Select card type:</label>
           <input type="radio" id="cards1" name="paycards" checked>
-          <i class="fa fa-cc-visa" style="color:black; font-size: 36px;"></i>
+          <i class="fa fa-cc-visa" style="color:blue; font-size: 36px;"></i>
           <input type="radio" id="cards2" name="paycards">
           <i class="fa fa-cc-mastercard" style="color:black; font-size: 36px;"></i>
 
           <label for="fname">Cardholder Name:</label>
-          <input type="text" id="fname" name="fullname" placeholder="Ricardo Milos" style="width: 80%;">
+          <input type="text" id="fname" name="fullname" placeholder="Ricardo Milos" style="max-width: 100%;">
           
           <label for="crednum">Card Number:</label>
-          <input type="text" id="crednum" name="ccardnum" placeholder="Eg. 1234-5678-6942-0123" style="width: 80%;">
-
+          <input type="text" id="crednum" name="ccardnum" placeholder="Eg. 1234-5678-6942-0123" style="width: 60%;">
+          
           <label for="exp">Expiry Date:</label>
-          <input type="text" id="exp" name="expdate" placeholder="Eg. 08/26" style="min-width: 25%; max-width: 30%;">
+          <input type="text" id="exp" name="expdate" placeholder="Eg. 08/26" style="width: 30%;">
 
           <label for="cvvnum">CVV:</label>
-          <input type="text" id="cvvnum" name="cvv" placeholder="Eg. 833" style="min-width: 25%; max-width: 30%">
-          
+          <input type="text" id="cvvnum" name="cvv" placeholder="Eg. 833" style="width: 30%;">
           <br> <br>
 
-          <button style="margin-left: 10px;" type="button" class="submitbtn" onclick="submitButton()">Submit Now!</button>
+          <button style="margin-left: 10px;" type="button" class="submitbtn" onclick="submitButton()">Submit</button>
           
           <script>
         
             function submitButton()
             {
-              alert("Thank you for your feedback!")
+              alert("Thank you for filling in your info!")
               location.reload()
             }
       
