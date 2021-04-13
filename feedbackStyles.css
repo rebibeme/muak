@@ -17,6 +17,7 @@ h1
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.9;
 }
 
 .ActiveSlide
@@ -84,6 +85,8 @@ h1
 .feedback
 {
     max-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
 	font-family:  Verdana, Geneva, Tahoma, sans-serif;
@@ -92,7 +95,7 @@ h1
 .formfeedback
 {
     border-radius: 5px;
-    background-color: gray;
+    background-color: #FFBE12;
     padding: 30px;
     margin: 0.2em;
     height: 550px;
@@ -154,10 +157,16 @@ textarea
     box-sizing: border-box;
     background-color: white;
     opacity: 0.9;
+    border: 2px solid black;
 }
 
 .submitbtn:hover
 {
     background-color: cyan;
     opacity: 1.0;
+}
+
+#bck-img{
+    background-image: url('backgroundlogo.png');
+    background-attachment: fixed;
 }

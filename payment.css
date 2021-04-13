@@ -63,7 +63,7 @@ h1
 .pay-container
 {
     border-radius: 5px;
-    background-color: gray;
+    background-color: #FFBE12;
     padding: 30px;
     margin: 0.2em;
     height: 90%;
@@ -85,6 +85,7 @@ select
     width:80%;
     margin-top: 6px;
     resize:vertical;
+    border-radius: 4px;
 }
 
 #postcode
@@ -99,6 +100,7 @@ select
     margin: 8px 0;
     display: inline-block;
     border: 2px solid black;
+    border-radius: 4px;
     box-sizing: border-box;
     background-color: white;
     opacity: 0.9;
@@ -109,4 +111,9 @@ select
     background-color: cyan;
     opacity: 1.0;
     font-weight: bold;
+}
+
+#bck-img{
+    background-image: url('backgroundlogo.png');
+    background-attachment: fixed;
 }
