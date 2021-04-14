@@ -237,10 +237,19 @@
 
       </div>
     </section>
-
+    
+    
+    
     <h2 id="intro" style="-webkit-text-stroke: 3px black;">Promotion</h2>
     <table class="programs">
-      <caption>Promotion Scedule</caption>
+      <caption style="font-family:verdana; font-size: 20px; text-align:center" id="line2"></caption>
+      <script>
+        var htmlLine2 = document.getElementById("line2");
+        setInterval(function () {
+          var d = getData();
+          htmlLine2.innerHTML = d;
+        }, 1000);
+      </script>
       <colgroup>
          <col class="timeColumn">
          <col class="wDayColumn" span=5>
@@ -283,7 +292,7 @@
     </address>
  </footer>
 
-
+ <script type="text/javascript" src="currenttime.js"> </script>
 <!--automatic slideshow-->
 <script src="slide.js"></script>
 <!--automatic slideshow-->
