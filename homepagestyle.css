@@ -95,3 +95,8 @@
   clear: both;
   display: table;
 }
+
+::cue{
+  font-family: 'Times New Roman';
+  background-color: #717171;
+}
