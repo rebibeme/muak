@@ -1,6 +1,6 @@
 function update(elem,rowNO){
     var qty = document.getElementsByClassName("qty form-control");
-    if 
+    if(onclick)
 }
 function inc(elem,rowNO){
     qty++;
