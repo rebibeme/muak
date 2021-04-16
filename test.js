@@ -1,11 +1,9 @@
-function update(elem,rowNO){
-    var qty = document.getElementsByClassName("qty form-control");
-    if(onclick)
-}
+var qty = document.getElementsByClassName("qty form-control").value;
+
 function inc(elem,rowNO){
-    qty++;
+    document.getElementsByClassName("qty form-control").value = qty++;
 }
 
 function dec(elem,rowNo){
-    qty--;
+    document.getElementsByClassName("qty form-control").value = qty--;
 }
