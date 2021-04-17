@@ -13,7 +13,5 @@ function increaseValue() {
     document.getElementsByClassName('qty form-control').value = value;
   }
 
-  <button class="cart-qty-plus" id="increase" onclick="increaseValue()" value="Increase Value">+</button>
-  <input type="number" id="qty form-control" value="0" min="0"/>
-  <button class="cart-qty-minus" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</button>
+  
   
