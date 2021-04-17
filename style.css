@@ -110,3 +110,92 @@ address{
 	padding: 2px;
   }
 
+/*footer*/
+    .footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: black;
+    background-color: white;
+    }
+    
+    .footer > * {
+    flex:  1 100%;
+    }
+    
+    .l-footer {
+    margin-left: 5em;
+    margin-right: 1em;
+    margin-bottom: 1.5em;
+    }
+    .l-footer img{
+        max-width: 230px;
+        width: 50%;
+    }
+    
+    h2 {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+    }
+    
+    .footer ul {
+    list-style: none;
+    padding-left: 0;
+    }
+    
+    .footer li {
+    line-height: 2em;
+    }
+    
+    .footer a {
+    text-decoration: none;
+    }
+    
+    .r-footer {
+    display: flex;
+    flex-flow: row wrap;
+    }
+    
+    .r-footer > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+    }
+    
+    .box a {
+    color: black;
+    }
+    
+    .h-box {
+    column-count: 2;
+    column-gap: 1.25em;
+    }
+    
+.b-footer {
+    text-align: center;
+    color: black;
+    line-height: 0.25cm;
+    }
+    
+    .l-footer p {
+    padding-right: 20%;
+    color: #999;
+    }   
+    
+    @media screen and (min-width: 600px) {
+    .r-footer > * {
+    flex: 1;
+    }
+    
+    .features {
+    flex-grow: 2;
+    }
+    
+    .l-footer {
+    flex: 1 0px;
+    }
+    
+    .r-footer {
+    flex: 2 0px;
+    }
+    }
