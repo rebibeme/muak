@@ -158,5 +158,29 @@
 	margin-right: 20px;
 	border-radius: 50%;
   }
+
+/*icon footer*/
+#fb1 img{
+	width: 50px;
+	position: relative;
+	bottom:5px;
+  }
+  
+  #twitter1 img{
+	width: 37px;
+	position: relative;
+	top: 2px;
+	bottom: 5px;
+  }
+  #ig1 img{
+	position: relative;
+	bottom: 4px;
+	width: 50px;
+  }
+  
+  .icon1{
+	float:left;
+  }
+  /*icon footer end*/
   
   

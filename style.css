@@ -114,7 +114,7 @@ address{
     .footer {
     display: flex;
     flex-flow: row wrap;
-    padding: 50px;
+    padding: 0px;
     color: black;
     background-color: white;
     }
