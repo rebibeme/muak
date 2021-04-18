@@ -6,7 +6,7 @@
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="layout.css">
       <link rel="stylesheet" href="cart2.css">
-      <link rel="java" href="test.js">
+      
 </head>
 
 <body>  
@@ -86,7 +86,7 @@
                               <input type="number" class="qty form-control" value="0" min="0"/>
                               <button class="cart-qty-minus" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</button>
                              </div>
-                          </td>
+                           </td>
                           <td>
                              <input type="text" value="18.90" class="price form-control" disabled>
                           </td>
@@ -109,9 +109,26 @@
                       </td>
                       <td>
                          <div class="button-container">
-                           <button class="cart-qty-plus" id="increase" onclick="increaseValue()" value="Increase Value">+</button>
+                           <text class="cart-qty-plus" id="increase" onclick="increaseValue()" value="Increase Value">+</text>
                            <input type="number" class="qty form-control" value="0" min="0"/>
-                           <button class="cart-qty-minus" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</button>
+                           <text class="cart-qty-minus" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</text>
+
+                           <script>
+                              function increaseValue() {
+                             var value = parseInt(document.getElementsByClassName('qty form-control').value, 10);
+                             value = isNaN(value) ? 0 : value;
+                             value++;
+                             document.getElementById('qty form-control').value = value;
+                           }
+                           
+                           function decreaseValue() {
+                             var value = parseInt(document.getElementById('qty form-control').value, 10);
+                             value = isNaN(value) ? 0 : value;
+                             value < 1 ? value = 1 : '';
+                             value--;
+                             document.getElementById('qty form-control').value = value;
+                           }
+                           </script>
                          </div>
                       </td>
                       <td>
@@ -164,7 +181,8 @@
            </div>
         </div>
      </div>   
-  
+   
+   <script src="test.js"></script>
 
   <footer>
     <hr style="width:97%">
