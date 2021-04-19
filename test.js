@@ -14,7 +14,7 @@ function calculate() {
     var price = document.getElementById("price" + rowNo);
     var amount = document.getElementById("Amount" + rowNo);
  
-    var quantity = document.getElementById("cart_qty" + rowNO);
+    var quantity = document.getElementById("cart_qty" + rowNo);
  
     var q = Number(quantity.value);
  
