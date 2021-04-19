@@ -6,12 +6,12 @@ function calculate() {
     var tAmount = Number(amount1.value)
        + Number(amount2.value)
        + Number(amount3.value)
-    document.getElementById("totalAmount").value = tAmount 
+    document.getElementById("totalAmount").value = tAmount.toFixed(2) 
  
  }
  
  function sub(elem, rowNo) {
-    var price = document.getElementById("Price" + rowNo);
+    var price = document.getElementById("price" + rowNo);
     var amount = document.getElementById("Amount" + rowNo);
  
     var quantity = document.getElementById("cart_qty");
@@ -21,7 +21,7 @@ function calculate() {
     if (q>0) {
        p = Number(price.value);
        var a = p * q;
-       amount.value = a;
+       amount.value = a.toFixed(2);
     } else {
        amount.value = "0.00";
     }
