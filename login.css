@@ -6,7 +6,7 @@ div{
   padding: 16px;
 }
 
-div{
+div.loginbox{
   width: 40%;
   border-style: ridge;
   border-radius: 15px;
