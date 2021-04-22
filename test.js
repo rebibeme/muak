@@ -10,11 +10,11 @@ function calculate() {
  
  }
  
- function sub(elem, rowNo) {
-    var price = document.getElementById("price" + rowNo);
-    var amount = document.getElementById("Amount" + rowNo);
+ function sub(elem, product) {
+    var price = document.getElementById("price" + product);
+    var amount = document.getElementById("Amount" + product);
  
-    var quantity = document.getElementById("cart_qty" + rowNo);
+    var quantity = document.getElementById("cart_qty" + product);
  
     var q = Number(quantity.value);
  
