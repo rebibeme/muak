@@ -2,11 +2,8 @@ body{
   font-family: "Comic Sans MS";
 }
 
-div{
-  padding: 16px;
-}
-
 div.loginbox{
+  padding: 16px;
   width: 40%;
   border-style: ridge;
   border-radius: 15px;
