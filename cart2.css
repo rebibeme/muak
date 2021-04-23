@@ -66,3 +66,8 @@ thead tr{
     background-color: #4CAF50;
     opacity: 0.9;
 }
+
+#cart_order:hover
+{
+    opacity: 1;
+}
