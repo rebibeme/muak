@@ -33,7 +33,6 @@ input[type="text"],input[type="password"]
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-
 [type="submit"]:hover
 {
     opacity: 1;

@@ -55,3 +55,14 @@ thead tr{
     width:100px !important;
     height:100px !important;
 }
+#cart_order
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #4CAF50;
+    opacity: 0.9;
+}
