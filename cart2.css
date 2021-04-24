@@ -2,7 +2,7 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-div{
+.c1,.c2,.c3,.c4,.product-img,.product-img,.img-prdct,.qty_field{
     margin: auto;
     padding: 20px 55px;
 }
