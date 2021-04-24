@@ -6,7 +6,7 @@ div{
     margin: auto;
     padding: 20px 55px;
 }
-h2{
+.title_cart{
 	text-align:center;
 }
 i {
@@ -26,11 +26,10 @@ button:focus,
 .table tr td{
     vertical-align: middle;
 }
-.button-container{
-    display: flex;
+.qty_field{
     align-items: center;
 }
-.button-container .form-control{
+.qty_field .form-control{
     max-width: 80px;
     text-align: center;
     display: inline-block;
